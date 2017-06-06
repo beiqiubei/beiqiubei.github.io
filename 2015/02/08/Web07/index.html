@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>入门到放弃7 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="DOM树形文档操作   dom被称为文档模型，树上的每一个分支都是对象。 页面自上而下加载 别把JS写在body前面 不然执行的时候找不到html获取不到就没有任何意义了  console.log  在控制台输出日志  console.dir  在控制台输出目录   这样会以对象的方式输出  getElementBy   获取到的都是对象  getElementsBy  获取到都是伪数组   事">
+<meta name="keywords" content="吾之初心 永世不忘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="入门到放弃7">
+<meta property="og:url" content="http://yoursite.com/2015/02/08/Web07/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="DOM树形文档操作   dom被称为文档模型，树上的每一个分支都是对象。 页面自上而下加载 别把JS写在body前面 不然执行的时候找不到html获取不到就没有任何意义了  console.log  在控制台输出日志  console.dir  在控制台输出目录   这样会以对象的方式输出  getElementBy   获取到的都是对象  getElementsBy  获取到都是伪数组   事">
+<meta property="og:updated_time" content="2017-06-06T08:23:17.991Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="入门到放弃7">
+<meta name="twitter:description" content="DOM树形文档操作   dom被称为文档模型，树上的每一个分支都是对象。 页面自上而下加载 别把JS写在body前面 不然执行的时候找不到html获取不到就没有任何意义了  console.log  在控制台输出日志  console.dir  在控制台输出目录   这样会以对象的方式输出  getElementBy   获取到的都是对象  getElementsBy  获取到都是伪数组   事">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/plugin/bganimation/bg.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <div class="widget-wrap mobile-header">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
+    <h2 class="author">Zi Wang</h2>
+    <h3 class="description">null</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>16</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+        <section id="main"><article id="post-Web07" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/08/Web07/" class="article-date">
+  <time class="post-time" datetime="2015-02-07T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">08</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      入门到放弃7
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>DOM树形文档操作</p>
+</blockquote>
+<ul>
+<li>dom被称为文档模型，树上的每一个分支都是对象。</li>
+<li><p>页面自上而下加载 别把JS写在body前面 不然执行的时候找不到html获取不到就没有任何意义了</p>
+</li>
+<li><p>console.log  在控制台输出日志</p>
+</li>
+<li><p>console.dir  在控制台输出目录   这样会以对象的方式输出</p>
+</li>
+<li><p>getElementBy   获取到的都是对象</p>
+</li>
+<li>getElementsBy  获取到都是伪数组 </li>
+</ul>
+<h2 id="事件三要素"><a href="#事件三要素" class="headerlink" title="事件三要素"></a>事件三要素</h2><ul>
+<li>事件源  事件  时间处理程序</li>
+<li>点击按钮弹出警告 按钮 点击  弹出警告框的程序</li>
+<li><p>事件源.事件=function(){事件处理程序}</p>
+</li>
+<li><p>innerText  改变文本 赋值也会变成文本形式输出</p>
+</li>
+<li><p>innerHTML  改变页面标签  符合标签规则就以标签的形式输出  不然就输入文本形式</p>
+</li>
+<li><p>onblur 失去焦点 onfocus 进入焦点</p>
+</li>
+</ul>
+<h3 id="按钮排他"><a href="#按钮排他" class="headerlink" title="按钮排他"></a>按钮排他</h3><ul>
+<li>按钮排他是两层for循环 第一层是控制每次都能点击，第二个是都能全部清空 第二个循环外面的</li>
+<li>this是为了确保当前点击是哪一个</li>
+<li><p>杀死所有的人然后在复活当前对象 this</p>
+<ul>
+<li>标签中有规定的属性，可以反映到对象身上</li>
+<li>标签中没有规定的属性 不能反映到对象身上</li>
+<li>标准中有规定的属性 对象会影响标签</li>
+<li>标准中没有规定的属性 对象不会影响标签</li>
+</ul>
+</li>
+<li><p>总结：</p>
+<ul>
+<li>标准中有规定的属性 标签和对象相互影响</li>
+<li>标准中没有规定的属性 标签和对象不会相互影响</li>
+</ul>
+</li>
+<li><p>专门获取标签中自定义属性的方法 getAttribute(npx.getAttribute(“aaa”))</p>
+</li>
+<li>设置标签方法 setAttribute(“bbb”,222)</li>
+<li><p>移除任意标签属性 removeAttribute(class)</p>
+<ul>
+<li>想知道一个函数的参数以及返回什么就在JS文件里面/**回车就知道了</li>
+</ul>
+</li>
+</ul>
+<h4 id="节点属性"><a href="#节点属性" class="headerlink" title="节点属性"></a>节点属性</h4><ul>
+<li>nodeType节点类型  nodeName节点名称 nodeValue节点的值</li>
+<li>元素节点最常用    标签节点名就是这个标签名字  文本节点内容</li>
+<li><p>getAttributeNode(“id”)可以获取节点属性节点</p>
+</li>
+<li><p>所有获取节点的相关属性都没有兼容问题</p>
+</li>
+<li>children  子元素  虽然不是早期dom方法   但是所有浏览器都支持  </li>
+<li><p>IE8获取的时候可能有点小问题会把注释当成文本</p>
+<ul>
+<li>nextSibling 下一个兄弟元素  nextElementSibling 下一个兄弟元素有兼容问题</li>
+</ul>
+</li>
+<li><p>把数字写在一个方法判断的条件的前面 这样不容易出错  因为数字是没办法赋值的</p>
+<ul>
+<li>console.log(parseInt(Math.random() * 7)); 获取那个随机数 你就乘那个数 这是小技巧</li>
+</ul>
+</li>
+<li><p>onkeyup键盘弹起事件</p>
+</li>
+<li><p>通过.style属性只能获取行内样式 获取到的样式属性只有属性值是字符串带单位</p>
+<ul>
+<li>不严格的来说 就是类样式和行内样式 那个方便写那个</li>
+<li>严格来说只要是设置样式都应该用类名样式，但是如果是涉及到计算的情况，就必须控制行内样式</li>
+</ul>
+</li>
+<li><p>因为设置的是行内样式，所以图片的路径要以HTML文件为准  记得加单位</p>
+<ul>
+<li>filter:alpha(opacity=50)  IE 678  不支持透明度就使用这个</li>
+<li>opacity 子盒子会继承透明度 rgba不会继承</li>
+</ul>
+</li>
+<li><p>display:none  消失后不占位置</p>
+</li>
+<li><p>visibility:hidden    消失后依旧站位</p>
+<ul>
+<li>关闭JD按钮广告 要记得取消a标签的后续事件 不然他会跳转 没跳转就会跳转当前页面导致重新加载然后就没关闭</li>
+<li>同一个浏览器中只能有一个文本框能获取焦点 如果有其他的获取了 前面那个会失去焦点</li>
+</ul>
+</li>
+<li><p>通过JS添加样式属性直接赋值给字符串</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/02/08/Web07/" data-id="cj3ls58jx000i9gsx1js3p7fd" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/02/11/Web08/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          入门到放弃8
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/02/03/Web06/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">入门到放弃6</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <h1 class="blog-title">Hexo</h1>
+    <h2 class="blog-subtitle">null</h2>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
+    <h2 class="author">Zi Wang</h2>
+    <h3 class="description">null</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>16</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+
+
+
+    <div class="social-link">
+      
+        <a class="hvr-bounce-in" href="http://github.com/ShanaMaid" target="_blank" title="Github">
+          Github
+        </a>
+      
+    </div>
+
+    <div class="friend-link">
+      <h2>友情链接</h2>
+      
+        <a class="hvr-bounce-in" href="http://blog.shanamaid.top/" target="_blank" title="ShanaMaid">
+          ShanaMaid
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy;2016 - 2017 Zi Wang<br>
+      由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动 | 
+      主题-<a href="https://github.com/ShanaMaid/hexo-theme-shana">Shana</a>
+      
+    </div>
+    
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>   
+
+
+  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+  <script src="/plugin/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+  <link rel="stylesheet" href="/plugin/galmenu/GalMenu.css">
+  <script src="/plugin/galmenu/GalMenu.js"></script>
+  <div class="GalMenu GalDropDown">
+      <div class="circle" id="gal">
+        <div class="ring">
+          
+            <a href="/" title="" class="menuItem">首页</a>
+          
+            <a href="/tags" title="" class="menuItem">标签</a>
+          
+            <a href="/categories" title="" class="menuItem">分类</a>
+          
+            <a href="/archives" title="" class="menuItem">归档</a>
+          
+            <a href="/xxxxxxxxx" title="" class="menuItem">xxx</a>
+          
+            <a href="/xxxxxxx" title="" class="menuItem">xxxx</a>
+          
+        </div>
+        
+          <audio id="audio" src="#"></audio>
+        
+      </div> 
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+  <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+    for (var i = 0,
+    l = items.length; i < l; i++) {
+      items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+      items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+    }</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').GalMenu({
+      'menu': 'GalDropDown'
+    })
+  });
+</script>
+
+  <section class="hidden-xs"> 
+  <ul class="cb-slideshow"> 
+    <li><span>苟利</span></li> 
+    <li><span>国家</span></li> 
+    <li><span>生死以</span></li> 
+    <li><span>岂能</span></li> 
+    <li><span>祸福</span></li> 
+    <li><span>趋避之</span></li> 
+  </ul>
+</section>
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

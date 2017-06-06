@@ -37,7 +37,7 @@
     <h2 class="author">Zi Wang</h2>
     <h3 class="description">null</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>4</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>16</strong><br>文章</div></a>
       <a href="/categories"><div><strong>0</strong><br>分类</div></a>
       <a href="/tags"><div><strong>1</strong><br>标签</div></a>
     </div>
@@ -110,7 +110,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/01/hello-world/" data-id="cj3jy13cp000a2ssxqvtr0hjl" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2017/06/01/hello-world/" data-id="cj3ls58lk000y9gsx3tgm8qzc" class="article-share-link">分享</a>
       
       
     </footer>
@@ -122,11 +122,712 @@
 
 
   
-    <article id="post-Web03" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Web15" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/21/Web03/" class="article-date">
-  <time class="post-time" datetime="2015-01-20T16:00:00.000Z" itemprop="datePublished">
-    <span class="post-month">1月</span><br/>
+    <a href="/2015/03/13/Web15/" class="article-date">
+  <time class="post-time" datetime="2015-03-12T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">3月</span><br/>
+    <span class="post-day">13</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/13/Web15/">入门到放弃15</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>C3</p>
+</blockquote>
+<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><ul>
+<li><p>background-size 背景尺寸  </p>
+<ul>
+<li>cover 完全铺满  contain 完全显示</li>
+</ul>
+</li>
+<li><p>background-origin 背景原点 从那里开始平铺 </p>
+<ul>
+<li>border-box</li>
+<li>padding-box</li>
+<li>content-box</li>
+</ul>
+</li>
+<li><p>background-clip 裁剪</p>
+<ul>
+<li>border-box</li>
+<li>padding-box</li>
+<li><p>content-box</p>
+</li>
+<li><p>多背景 逗号</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="渐变"><a href="#渐变" class="headerlink" title="渐变"></a>渐变</h3><ul>
+<li><p>linear-gradient 线性渐变</p>
+<ul>
+<li>方向</li>
+<li>起始颜色</li>
+<li>结束颜色</li>
+</ul>
+</li>
+<li><p>radial-gradient</p>
+<ul>
+<li>半径</li>
+<li>原点</li>
+<li>起始颜色</li>
+<li>结束颜色</li>
+</ul>
+</li>
+</ul>
+<h3 id="过渡"><a href="#过渡" class="headerlink" title="过渡"></a>过渡</h3><ul>
+<li>1.所有的属性状态发生改变都可以产生过渡</li>
+<li>2.但是有些属性很特殊  display:none display:block  看不到</li>
+<li>3.all 所有的属性都可以产生过渡效果</li>
+<li>4.可以指定某一个属性 或者 多个属性 产生过渡 </li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">/*具备过渡的功能  transition*/</div><div class="line">/*transition: all 1s linear 2s;*/</div><div class="line">/*详细的属性*/</div><div class="line">/*1.需要过渡的属性*/</div><div class="line">transition-property: all;</div><div class="line">/*2.过渡的时间*/</div><div class="line">transition-duration: 1s;</div><div class="line">/*3.动画的速度*/</div><div class="line">/*</div><div class="line">cubic-bezier(0, 0, 0.47,-0.35) 动画速度的贝塞尔曲线</div><div class="line">linear 匀速</div><div class="line">ease   先快后慢   这个是默认的速度</div><div class="line">ease-in 先快后慢</div><div class="line">ease-out 先慢后快</div><div class="line">ease-in-out 先快后慢在快</div><div class="line">*/</div><div class="line">transition-timing-function: ease-in-out;</div><div class="line">/*4.过渡延时时间*/</div><div class="line">transition-delay: 2s;</div><div class="line"></div><div class="line">transition all 1s</div><div class="line">all  该元素的所有属性  发生改变都能产生动画</div><div class="line"></div><div class="line">transition-property  过渡的属性</div><div class="line">transition-duration  时间</div><div class="line">transition-timing-function 速度</div><div class="line">transition-delay 延时</div></pre></td></tr></table></figure>
+<h3 id="2d转换"><a href="#2d转换" class="headerlink" title="2d转换"></a>2d转换</h3><ul>
+<li><p>transform  转换属性</p>
+<ul>
+<li>transform 转换属性</li>
+<li>scale(arg1,arg2)  比例的缩放</li>
+<li>arg1 x轴方向的缩放</li>
+<li>arg2 y轴方向的缩放</li>
+<li>1 原始比例</li>
+<li>比1大  放大</li>
+<li>比1小  缩小</li>
+</ul>
+</li>
+<li><p>scale 缩放</p>
+<ul>
+<li>transform 转换属性</li>
+<li>scale(arg1,arg2)  比例的缩放</li>
+<li>arg1 x轴方向的缩放</li>
+<li>arg2 y轴方向的缩放</li>
+<li>1 原始比例</li>
+<li>比1大  放大</li>
+<li>比1小  缩小</li>
+</ul>
+</li>
+<li><p>translate 位移</p>
+<ul>
+<li>transform 转换属性</li>
+<li>translate(arg1,arg2)  元素最终位置的位移</li>
+<li>arg1 x轴方向移动</li>
+<li>arg2 y轴方向移动<ul>
+<li>1.位移和定位没有关系 位移是根据元素的最终状态进行位移</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>rotate 旋转</p>
+<ul>
+<li>transform 转换属性</li>
+<li>rotate(arg1)  旋转</li>
+<li>arg1 旋转的角度     如果是顺时针旋转 角度是正的  反之  逆时针旋转就是负的角度</li>
+</ul>
+</li>
+<li><p>skew 倾斜</p>
+<ul>
+<li>transform 转换属性</li>
+<li>skew(arg1,arg2)  元素倾斜</li>
+<li>arg1 x轴方向倾斜</li>
+<li>arg2 y轴方向倾斜</li>
+<li><p>尽可能使用一个方向的倾斜</p>
+</li>
+<li><p>如果是X轴方向的倾斜</p>
+</li>
+<li>如果是正角度的倾斜  逆时针的倾斜</li>
+<li><p>如果是负角度的倾斜  顺时针的倾斜</p>
+</li>
+<li><p>如果是Y轴方向的倾斜</p>
+</li>
+<li>如果是负角度的倾斜  逆时针的倾斜</li>
+<li>如果是正角度的倾斜  顺时针的倾斜</li>
+</ul>
+</li>
+<li><p>transform-origin 转换原点</p>
+<ul>
+<li>转换  原点  设置</li>
+<li>top left right bottom center确定旋转中心</li>
+<li>px 定位的方式</li>
+</ul>
+</li>
+</ul>
+<h3 id="3d转换"><a href="#3d转换" class="headerlink" title="3d转换"></a>3d转换</h3><ul>
+<li>css 3d 坐标轴</li>
+<li><p>perspective 透视  参数  设置 视距</p>
+<ul>
+<li>让3d转换的效果 可以呈现出近大远小的效果</li>
+<li>/*透视</li>
+<li>参数 视距</li>
+<li>*/</li>
+<li>perspective: 100px;</li>
+</ul>
+</li>
+<li><p>transform-style: preserve-3d; 透视 3D效果成呈现</p>
+</li>
+<li><p>rotateX</p>
+<ul>
+<li>rotateX  绕着X轴转</li>
+<li>顺子轴的正方向看</li>
+<li>如果是逆时针  角度是正值</li>
+<li>如果是顺时针  角度是负值</li>
+</ul>
+</li>
+<li><p>rotateY</p>
+</li>
+<li><p>rotateZ</p>
+</li>
+<li><p>translateX</p>
+</li>
+<li>translateY</li>
+<li>translateZ</li>
+</ul>
+<h3 id="3d转换-1"><a href="#3d转换-1" class="headerlink" title="3d转换"></a>3d转换</h3><ul>
+<li><p>transform-style  flat  2d呈现   preserve-3d  3d呈现</p>
+</li>
+<li><p>顺着轴的正方向看  逆时针 正角度  顺时针 负角度    立方体</p>
+</li>
+<li><p>一张背景图在原地翻转的时候得写</p>
+<pre><code>- transform:translateZ(2px);谷歌是2PX 火狐是1PX才会有旋转效果
+</code></pre></li>
+</ul>
+<h3 id="动画"><a href="#动画" class="headerlink" title="动画"></a>动画</h3><ul>
+<li><p>animation</p>
+<ul>
+<li><ol>
+<li>@keyframes {   }  定义动画</li>
+</ol>
+</li>
+<li><ol>
+<li>from  to         开始  结束</li>
+</ol>
+</li>
+<li><p>animation-name  动画序列名称</p>
+</li>
+<li>animation-duration 时间</li>
+<li>animation-timing-function  速度  steps(步数)</li>
+<li>animation-delay  延时</li>
+<li>animation-fill-mode 动画结束后状态     forwards    backwards</li>
+<li>animation-iteration-count  执行次数</li>
+<li>animation-direction 是否逆播放   alternate</li>
+<li>animation-play-state 播放状态   running  paused </li>
+</ul>
+</li>
+</ul>
+<h3 id="伸缩布局"><a href="#伸缩布局" class="headerlink" title="伸缩布局"></a>伸缩布局</h3><ul>
+<li>display:flex  定义一个伸缩容器</li>
+<li>flex-direction: column;   改变主轴方向  row</li>
+<li>flex-wrap:nowrap;  wrap 换行</li>
+</ul>
+<ul>
+<li><p>flex:1  分配剩余的宽度  当前容器占多少份</p>
+</li>
+<li><p>1、伸缩布局</p>
+<ul>
+<li>标准流<ul>
+<li>行内没有宽高  块级 独占一行  行内块 一行显示多个 有宽高</li>
+</ul>
+</li>
+<li><p>浮动 ： 左浮动 有浮动</p>
+</li>
+<li><p>定位 ： 基准点  边偏移 top  left  bottom  right  right:20px;</p>
+</li>
+</ul>
+<ul>
+<li>伸缩布局：<ul>
+<li>主轴 侧轴</li>
+<li>默认主轴从左向右，侧轴默认从上到下</li>
+<li>子盒子的排列方向 是按照主轴的方向</li>
+<li>dispaly:flex:</li>
+</ul>
+</li>
+<li>主轴反向：<ul>
+<li>flex-direction:</li>
+<li>row  row-reverse  column  column-reverse</li>
+</ul>
+</li>
+<li><p>主轴的对齐方式：</p>
+<ul>
+<li>justify-content:</li>
+<li>flex-start:从主轴开始的地方对齐</li>
+<li>flex-end:从主轴结束的地方对齐</li>
+<li>center :居中</li>
+<li>space-aruond:平分父盒空间</li>
+<li>space-between: 两边对齐</li>
+</ul>
+</li>
+<li><p>侧轴对齐方式：</p>
+<ul>
+<li>align-items:<ul>
+<li>flex-start:从侧轴开始的地方对齐</li>
+<li>flex-end:从侧轴结束的地方对齐</li>
+<li>center:居中</li>
+<li>stretch:侧轴拉伸 最大化的充满侧轴方向(不要手动设置高度)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>是否换行：<ul>
+<li>flex-wrap: nowrap(默认)    wrap</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>伸缩比例：</p>
+<ul>
+<li>flex:</li>
+<li>直接给子盒子设置伸缩臂比例 ：所占有的份数 （相对于父盒子的宽度）</li>
+<li>不参与划分的子盒子 ，不用设置flex即可 ，宽高默认不变</li>
+</ul>
+</li>
+<li><p>字体图标：</p>
+<pre><code>- 声明字体：告诉浏览器去哪找字体
+- 在伪元素中使用：
+  * &amp;#xe601;
+  * 注意写法：content:&quot;\e601&quot;;
+</code></pre></li>
+<li>定义申明字体<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">      @font-face &#123;</div><div class="line">       font-family: font-icon;</div><div class="line">       src:</div><div class="line">       url(icomoon.woff) format(<span class="string">'woff'</span>),</div><div class="line">       url(icomoon.ttf) format(<span class="string">'truetype'</span>),</div><div class="line">       url(icomoon.svg) format(<span class="string">'svg'</span>),</div><div class="line">       url(icomoon.eot) format(<span class="string">'embedded-opentype'</span>);</div><div class="line">   &#125;</div><div class="line">/*怎么使用字体约束文件  怎么使用字体图标*/</div><div class="line">   /*指定字体*/</div><div class="line">   .it25&#123;</div><div class="line">       font-family: font-icon;</div><div class="line">   &#125;</div><div class="line">   /*申明具体的图标*/</div><div class="line">   .it25-del::before&#123;</div><div class="line">       /*注意  使用content指定字符串*/</div><div class="line">       content: <span class="string">"\e900"</span>;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/03/13/Web15/" data-id="cj3ls58ki000s9gsx6dn6yj4z" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-Web14" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/08/Web14/" class="article-date">
+  <time class="post-time" datetime="2015-03-07T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">3月</span><br/>
+    <span class="post-day">08</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/08/Web14/">入门到放弃14</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>C3</p>
+</blockquote>
+<h3 id="关于渐变不同浏览器有不同的版本，即语法格式不一样，我们以最新语法为准，可自行查找资料了解即可。"><a href="#关于渐变不同浏览器有不同的版本，即语法格式不一样，我们以最新语法为准，可自行查找资料了解即可。" class="headerlink" title="关于渐变不同浏览器有不同的版本，即语法格式不一样，我们以最新语法为准，可自行查找资料了解即可。"></a>关于渐变不同浏览器有不同的版本，即语法格式不一样，我们以最新语法为准，可自行查找资料了解即可。</h3><ul>
+<li><p><a href="http://www.w3cplus.com/css3/new-css3-linear-gradient.html" target="_blank" rel="external">http://www.w3cplus.com/css3/new-css3-linear-gradient.html</a></p>
+</li>
+<li><p>浏览器支持程度差 需要添加私有化前缀</p>
+</li>
+<li>移动端支持比PC端支持强</li>
+<li>谷歌  ver 46+  火狐 ver 42+ 就可以了</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&#123;&#125;      表示范围</div><div class="line">||      表示或者</div><div class="line">|       表示多选一</div><div class="line">[]      表示全部可选项</div><div class="line">？      表示0个或者1个</div><div class="line">*       表示0个或者多个</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">/*  [attribute]</div><div class="line">    [attribute=value]</div><div class="line">    [attribute!=value]</div><div class="line">    [attribute^=value]</div><div class="line">    [attribute$=value]</div><div class="line">    [attribute*=value]</div><div class="line">    [attrSel1][attrSel2][attrSelN]</div><div class="line">*/</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">/*选中所有  只要有class这个属性*/</div><div class="line">[class]&#123;</div><div class="line">    color: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">/*1.选中有class这个属性并且属性值完全等于abc*/</div><div class="line">/*jquery [attribute=value] */</div><div class="line">/* 选中有attribute这个属性并且属性值完全等于value */</div><div class="line">/*注意：.abc&#123;&#125;*/</div><div class="line">[class=<span class="string">"abc"</span>]&#123;</div><div class="line">    color: pink;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*2.选中有class这个属性并且属性值不等于abc */</div><div class="line">/*jquery [attribute!=value]*/</div><div class="line">/* 选中有attribute这个属性并且属性值不等于value */</div><div class="line">/*不支持 非  不等于 属性选择器*/</div><div class="line">[class!=<span class="string">"abc"</span>]&#123;</div><div class="line">    color:pink;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*3.选中有class这个属性并且属性值以abc开头*/</div><div class="line">/*jquery [attribute^=value]*/</div><div class="line">/* 选中有attribute这个属性并且属性值以value开头 */</div><div class="line">[class^=<span class="string">"abc"</span>]&#123;</div><div class="line">    color: pink;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*4.选中有class这个属性并且属性值以abc结尾*/</div><div class="line">/*jquery [attribute$=value]*/</div><div class="line">/* 选中有attribute这个属性并且属性值以value结尾 */</div><div class="line">[class$=<span class="string">"abc"</span>]&#123;</div><div class="line">    color: pink;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*5.选中有class这个属性并且属性值包含abc*/</div><div class="line">/*jquery [attribute*=value]*/</div><div class="line">/* 选中有attribute这个属性并且属性值包含value */</div><div class="line">[class*=<span class="string">"abcd"</span>]&#123;</div><div class="line">    color: pink;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*6.选中有class这个属性并且还有href这个属性的A*/</div><div class="line">/*jquery [attrSel1][attrSel2]*/</div><div class="line">/* 选中有attrSel1这个属性并且还选中了attrSel2*/</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div></pre></td><td class="code"><pre><div class="line">/*伪类选择器  序选择器*/</div><div class="line"></div><div class="line">/*1.选中第一个盒子 字体颜色变红*/</div><div class="line">    .first&#123;</div><div class="line">        color: red;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    /*</div><div class="line">    1. li用来确定父元素</div><div class="line">    2. 找到父元素当中的所有子元素</div><div class="line">    3. 找到所有子元素当中的第一个子元素</div><div class="line">    4. 如果类型是li那么选择器生效 否则无效</div><div class="line">    */</div><div class="line"></div><div class="line">/* 变量N 公式必须在前面  */</div><div class="line">/*注意 ：  位置的关系   n一定要放在表达式的前面*/</div><div class="line">/* number 取值范围 大于等于1的整数   否则无效*/</div><div class="line">/*传公式  变量 n  n取值范围是 自然数 0 1 2 3 ....  大于等于0的整数*/</div><div class="line">/*E:nth-child(number)  选择到E的父元素当中所有的子元素当中的第number个并且类型是E */</div><div class="line">/*E:first-child  选择到E的父元素当中所有的子元素当中的第一个并且类型是E */</div><div class="line">/*E:first-child(number)  选择到E的父元素当中所有的子元素当中的正数第number个并且类型是E */</div><div class="line">/*E:last-child  选择到E的父元素当中所有的子元素当中的最后个并且类型是E */</div><div class="line">/*E:last-child(number)  选择到E的父元素当中所有的子元素当中的倒数第number个并且类型是E */</div><div class="line">/*E:nth-last-child(number)  选择到E的父元素当中所有的子元素当中的倒数第number个并且类型是E */</div><div class="line"></div><div class="line">/*E:empty E确定某个元素 内容为空的时候被选择*/</div><div class="line">/*当前页面  描点对应的元素  锚点的目标元素  被选中*/</div><div class="line">/*1.排除属性name等于special的元素  其他的变成红色背景*/</div><div class="line">.<span class="built_in">test</span>:not([name=<span class="string">"special"</span>])&#123;</div><div class="line">    background: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*清除浮动*/</div><div class="line">/*.clearfix::before,</div><div class="line">.clearfix::after&#123;</div><div class="line">    /!*内容一定需要*!/</div><div class="line">    content:<span class="string">""</span>;</div><div class="line">    /!*块级元素*!/</div><div class="line">    display: block;</div><div class="line">    /!*看不见*!/</div><div class="line">    visibility: hidden;</div><div class="line">    /!*高度0*!/</div><div class="line">    height: 0;</div><div class="line">    /!*行高高0*!/</div><div class="line">    line-height: 0;</div><div class="line"></div><div class="line">    /!*清除浮动*!/</div><div class="line">    clear: both;</div><div class="line">&#125;</div><div class="line">*/</div><div class="line">/*</div><div class="line">::before  ::after  伪元素选择器</div><div class="line">css3 规范写法是 双冒号    单冒号也可以   浏览器做了兼容</div><div class="line"></div><div class="line">/*选择到第一段话的第一行变成  绿色*/</div><div class="line">p:first-child::first-line&#123;</div><div class="line">    color: red;</div><div class="line">&#125;</div><div class="line"></div><div class="line">/*E::first-letter  首字 首字母  必须是块级元素*/</div><div class="line">/*第二段  选中的时候  背景黄色  文字变成 紫色*/</div><div class="line">p:nth-child(2)::selection&#123;</div><div class="line">    background: yellow;</div><div class="line">    color: purple;</div><div class="line">    /*无法改变字体大小*/</div><div class="line">    /*文字大小*/</div><div class="line">    font-size: 40px;</div><div class="line">&#125;</div><div class="line"></div><div class="line">text-shadow</div><div class="line">    /*阴影的右偏移下偏移 */</div><div class="line">    /*</div><div class="line">    1.x轴方向的偏移</div><div class="line">    2.y轴方向的偏移</div><div class="line">    3.阴影模糊程度</div><div class="line">    4.阴影的颜色</div><div class="line">    */</div></pre></td></tr></table></figure>
+<h2 id="盒模型"><a href="#盒模型" class="headerlink" title="盒模型"></a>盒模型</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line">box-sizing: border-box;</div><div class="line">/*</div><div class="line">前提是设置了大小</div><div class="line">    box-sizing 它是用来确定某个容器的大小宽度高度的计算从什么位置开始</div><div class="line">    content-box 大小从内容开始计算</div><div class="line">    border-box  边框开始计算大小</div><div class="line"></div><div class="line">box-shadow</div><div class="line">    */</div><div class="line">    /*盒子阴影 边框阴影*/</div><div class="line">    /*如果是四个参数*/</div><div class="line">    /*</div><div class="line">    1.x轴方向的偏移</div><div class="line">    2.y轴方向的偏移</div><div class="line">    3.阴影的模糊度</div><div class="line">    4.阴影的颜色</div><div class="line">*/</div><div class="line">/*box-shadow: 3px 3px 5px <span class="comment">#ccc;*/</span></div><div class="line">/*如果是五个参数*/</div><div class="line">/*第四个参数   延伸阴影的大小 */</div><div class="line">    box-shadow: 3px 2px 5px 5px <span class="comment">#ccc;</span></div><div class="line"></div><div class="line">&#125;</div><div class="line">.item:last-child&#123;</div><div class="line">/*如果是六个参数*/</div><div class="line">/*inset 内阴影的意思 位置 前后都可以*/</div><div class="line">/*可以多阴影 已逗号分隔*/</div><div class="line">    /*box-shadow:inset 3px 3px 5px 5px <span class="comment">#ccc ,3px 3px 5px red;*/</span></div><div class="line">    box-shadow: inset 0 0 30px red;</div><div class="line"></div><div class="line">/*切割的尺寸是不带单位  默认的单位是px*/</div><div class="line">    /*border-image: url(<span class="string">"./images/border.png"</span>) 27/20px round;*/</div><div class="line">    /*边框图片资源*/</div><div class="line">    border-image-source: url(<span class="string">"./images/border.png"</span>);</div><div class="line">    /*边框图片切割的尺寸*/</div><div class="line">    border-image-slice: 27;</div><div class="line">    /*边框图片宽度  自适应显示图片内容*/</div><div class="line">    border-image-width: 20px;</div><div class="line">    /*边框图片平铺方式  round 环绕的形式  repeat 平铺 以中心位置向两侧平铺  默认stretch 拉伸*/</div><div class="line">    border-image-repeat: round;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/03/08/Web14/" data-id="cj3ls58k7000o9gsx7q7ow14v" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-Web13" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/03/03/Web13/" class="article-date">
+  <time class="post-time" datetime="2015-03-02T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">3月</span><br/>
+    <span class="post-day">03</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/03/03/Web13/">入门到放弃13</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>H5</p>
+</blockquote>
+<ul>
+<li>HTML是超文本语言 不是一种编程语言  而是一种标记语言 他通过标签语言 来标记网页结构或者说是内容</li>
+<li>h5是h4的增强版就是在原来的基础上面增加了一些新的功能</li>
+</ul>
+<h2 id="语法规范"><a href="#语法规范" class="headerlink" title="语法规范"></a>语法规范</h2><ul>
+<li>DOCUTYPE 指令告诉浏览器怎么处理我们的HTML h4很是复杂有很多写法  比如strict严格模式  loose 过渡版本  H5 最简单也最简洁也是现在最常用的写法</li>
+</ul>
+<h1 id="W3C验证地址：http-validator-w3-org-很好的一个检测东西"><a href="#W3C验证地址：http-validator-w3-org-很好的一个检测东西" class="headerlink" title="W3C验证地址：http://validator.w3.org/  很好的一个检测东西"></a>W3C验证地址：<a href="http://validator.w3.org/" target="_blank" rel="external">http://validator.w3.org/</a>  很好的一个检测东西</h1><h2 id="语义化"><a href="#语义化" class="headerlink" title="语义化"></a>语义化</h2><ul>
+<li>传统的做法是以类名或者ID来语义</li>
+<li>语义化的好处 有利于搜索引擎或辅助设备<ul>
+<li><header></header>页眉<ul>
+<li>1、可以是整个页面或者任意”section”的头部部分。</li>
+<li>2、没有个数限制。</li>
+<li>3、如果h1-h6能很好的工作，就不要用header</li>
+</ul>
+</li>
+<li><footer></footer>页脚<ul>
+<li>1、可以是整个页面或者任意”section”的底部部分。</li>
+<li>2、没有个数限制。</li>
+<li>3、一般包含联系信息，版权信息等。</li>
+</ul>
+</li>
+<li><nav></nav>导航<ul>
+<li>整个页面的主要导航部分</li>
+</ul>
+</li>
+<li><main></main>主要区域<ul>
+<li>一般放在主要内容区域</li>
+</ul>
+</li>
+<li><section></section>块区域<ul>
+<li>1、表示文档的节或段。</li>
+<li>2、article、nav、aside可以理解为特殊的section。</li>
+<li>3、可以用article、nav、aside的就不用section。</li>
+</ul>
+</li>
+<li><article></article>文章<ul>
+<li>1、自身独立的情况下，用article。</li>
+<li>2、是相关内容，用section</li>
+<li>3、没有语义，用div</li>
+</ul>
+</li>
+<li><aside></aside>侧边栏<ul>
+<li>1、aside在main标签之内，和section或article标签对应，表示这些主要内容的附属信息。</li>
+<li>2、如果是广告，其他日志链接或者其他分类导航也可以使用。</li>
+</ul>
+</li>
+<li><figure></figure>独立的流内容<ul>
+<li>1、标签规定独立的流内容（图像、图表、照片、代码等等）。</li>
+<li>2、元素的内容应该与主内容相关，但如果被删除，则不应对文档流产生影响。</li>
+</ul>
+</li>
+<li><figcaption></figcaption>独立流内容的标题<ul>
+<li>1、定义figure中图片等东西的标题。</li>
+<li>2、元素应该被置于 “figure” 元素内的第一个或最后一个子元素的位置。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="兼容处理"><a href="#兼容处理" class="headerlink" title="兼容处理"></a>兼容处理</h2><ul>
+<li>在不支持H5新标签的浏览器中  会将这些标签解析成行内元素 所以我们只要转化成块级元素即可使用 </li>
+<li>IE9以下(不包括IE9)不能正常解析这些新标签  但是可以识别通过 这个时候我们可以创建元素的方式document.createElemenet的方式是可以创建出来 必须写在前面 </li>
+<li>可以使用一个html5hiv.min的插件就可以完美解决这些问题</li>
+<li>IE有个bug如果页面有中文在浏览器中访问的时候会编码然后就会没有效果 这时候你可以通过文件夹位置去访问就可以出现效果</li>
+<li>n可以判断一下ie几才执行这些JS文件 不然引入太多JS文件会导致页面加载缓慢 用户体验不好</li>
+</ul>
+<h4 id="微数据"><a href="#微数据" class="headerlink" title="微数据"></a>微数据</h4><ul>
+<li>给标签添加一些数据 然后是给机器看的比较友好</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line">表单</div><div class="line">&lt;fieldset&gt;</div><div class="line">    &lt;legend&gt;学生档案&lt;/legend&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">"name"</span>&gt;</div><div class="line">        姓名:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"name"</span> id=<span class="string">"name"</span> placeholder=<span class="string">"请输入姓名"</span> required=<span class="string">"required"</span>&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">"tel"</span>&gt;</div><div class="line">        手机:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"tel"</span> id=<span class="string">"tel"</span> placeholder=<span class="string">"请输入手机号"</span> required=<span class="string">"required"</span>&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">"email"</span>&gt;</div><div class="line">        邮箱:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"email"</span> id=<span class="string">"email"</span> placeholder=<span class="string">"请输入邮箱"</span> required=<span class="string">"required"</span>&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">        个人主页:&lt;input <span class="built_in">type</span>=<span class="string">"URL"</span>  placeholder=<span class="string">"请输入个人主页"</span> required=<span class="string">"required"</span>&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">        所属院校:&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> list=<span class="string">"list"</span>&gt;</div><div class="line">        &lt;datalist id=<span class="string">"list"</span>&gt;</div><div class="line">            &lt;option value=<span class="string">"前端移动开发学院"</span>&gt;&lt;/option&gt;</div><div class="line">            &lt;option value=<span class="string">"JAVA移动开发学院"</span>&gt;&lt;/option&gt;</div><div class="line">            &lt;option value=<span class="string">"UI设计学院"</span>&gt;&lt;/option&gt;</div><div class="line">            &lt;option value=<span class="string">"C++设计学院"</span>&gt;&lt;/option&gt;</div><div class="line">            &lt;option value=<span class="string">"PHP设计学院"</span>&gt;&lt;/option&gt;</div><div class="line">        &lt;/datalist&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">        入学成绩:&lt;input <span class="built_in">type</span>=<span class="string">"number"</span> min=<span class="string">"0"</span> max=<span class="string">"100"</span> step=<span class="string">"5"</span> value=<span class="string">"40"</span> id=<span class="string">"sco"</span>&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">        技术水平:&lt;meter min=<span class="string">"0"</span> max=<span class="string">"100"</span> low=<span class="string">"0"</span>  high=<span class="string">"100"</span>  id=<span class="string">"level"</span>&gt;&lt;/meter&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">        入学时间:&lt;input <span class="built_in">type</span>=<span class="string">"data"</span> value=<span class="string">"2017-02-18"</span>&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">        毕业时间:&lt;input <span class="built_in">type</span>=<span class="string">"data"</span> value=<span class="string">"2017-06-27"</span>&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;label <span class="keyword">for</span>=<span class="string">""</span>&gt;</div><div class="line">        课程进度:&lt;progress min=<span class="string">"0"</span> max=<span class="string">"100"</span> low=<span class="string">"0"</span>  high=<span class="string">"100"</span> value=<span class="string">"24"</span>&gt;&lt;/progress&gt;</div><div class="line">    &lt;/label&gt;</div><div class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"submit"</span> name=<span class="string">""</span> id=<span class="string">""</span> value=<span class="string">"提交"</span>&gt;</div><div class="line">&lt;/fieldset&gt;</div></pre></td></tr></table></figure>
+<ul>
+<li>autofucus=””  页面进入 定位焦点</li>
+<li>pattern  验证 可以写个正则  实际验证的正则可以去其他网站扒人家的 不用自己写</li>
+<li>file  上传文件只能一张   multiple使用了这个属性可以选择多张</li>
+<li>我们用新增的属性  可以完成我们之前要用JS才能实现的效果</li>
+<li>自动完成输入  记录上一次的输入   actocomplete=”on”</li>
+<li>表单里面的事件….<ul>
+<li>oninput  监听文本输入状态</li>
+<li>oninvalid  当验证不通过的时候触发</li>
+</ul>
+</li>
+</ul>
+<h3 id="自定义属性"><a href="#自定义属性" class="headerlink" title="自定义属性"></a>自定义属性</h3><ul>
+<li>必须是data-开头  比如 data-yor_shift</li>
+<li>document.getElementbyid(id).dataset[‘yorS hift’]  获取自定义属性 第一个大写也可以获取到</li>
+</ul>
+<h2 id="JS分为三个部分"><a href="#JS分为三个部分" class="headerlink" title="JS分为三个部分"></a>JS分为三个部分</h2><ul>
+<li>ECMAScript<ul>
+<li>定义了js的语法 变量 语句</li>
+</ul>
+</li>
+<li>BOM 浏览器对象模型<ul>
+<li>我们可以调用一些自带的对象 就可以调出浏览器功能</li>
+</ul>
+</li>
+<li>DOM 文档对象模型<ul>
+<li>操作dom的前期 就必须获得 dom</li>
+<li>H5在获取标签的基础上进行了扩展  提供了一些更加强大的方法</li>
+<li>docuement.querySelector 这个里面包含 css的选择器 可以是id也可以是类 返回的是第一个元素<ul>
+<li>docuement.querySelectorall 获取所有的  返回的是一个集合 </li>
+<li>1、Node.classList.add(“class”) 添加class。</li>
+<li>2、Node.classList.remove(“class”) 移除class。</li>
+<li>3、Node.classList.toggle(“class”) 切换class，有则移除，无则添加。</li>
+<li>4、Node.classList.contains(“class”) 检测是否存在class。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="1、视频"><a href="#1、视频" class="headerlink" title="1、视频"></a>1、视频</h2><ul>
+<li><p>属性：</p>
+<ul>
+<li>paused: 视频的播放暂停状态</li>
+<li>duration:视频的总时长</li>
+<li><p>currentTime:当前播放时间</p>
+<ul>
+<li>方法： play() 播放<ul>
+<li>pause()暂停</li>
+</ul>
+</li>
+<li><p>事件：</p>
+<ul>
+<li>oncanplay： 当视频加载完成之后</li>
+<li>ontimeupdate: 当视频当前时间 改变之后触发</li>
+</ul>
+</li>
+<li><p>全屏：</p>
+<ul>
+<li>video.webkitRequsetFullScreen();</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="2、拖拽："><a href="#2、拖拽：" class="headerlink" title="2、拖拽："></a>2、拖拽：</h2><ul>
+<li>（1、需要设置拖拽：draggable=”true”</li>
+<li>（2、拖拽元素：<pre><code>- ondragstart: 拖拽开始
+- ondragend:拖拽结束
+- ondragleave: 当鼠标拖拽离开 被拖拽元素时
+- ondrag:　当拖拽时，持续触发
+</code></pre></li>
+<li>（3、目标元素：<ul>
+<li>ondragenter:当被拖拽元素进入目标元素时</li>
+<li>ondragleave:当鼠标进入目标元素时</li>
+<li>ondragover: 当被拖拽元素在目标元素上时，持续触发<br>  –&gt; e.preventDefault(); 阻止拖拽的默认行为；</li>
+<li>ondrop:当在目标元素上松开鼠标时触发；<h2 id="3、地理定位"><a href="#3、地理定位" class="headerlink" title="3、地理定位"></a>3、地理定位</h2></li>
+</ul>
+</li>
+<li><p>navigator.getCurrentPosition(successCallback, errorCallback, options)获取当前地理信息</p>
+<ul>
+<li>（1、当成功获取地理信息后，会调用succssCallback，<br>并返回一个包含位置信息的对象position。Coords(坐标)<br>position.coords.latitude纬度<br>position.coords.longitude经度</li>
+<li>（2、当获取地理信息失败后，会调用errorCallback，并返回错误信息error</li>
+<li>（3、可选参数 options 对象可以调整位置信息数据收集方式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="4、web存储"><a href="#4、web存储" class="headerlink" title="4、web存储"></a>4、web存储</h2><ul>
+<li>window.sessionStorage  会话存储<ul>
+<li>生命周期为关闭浏览器窗口</li>
+<li>在同一个窗口下数据可以共享</li>
+<li>sessionStorage约5M</li>
+</ul>
+</li>
+<li>window.localStorage<ul>
+<li>永久生效，除非手动删除</li>
+<li>可以多窗口共享</li>
+<li>localStorage约20M</li>
+</ul>
+</li>
+<li>方法详解<ul>
+<li>setItem(key, value) 设置存储内容</li>
+<li>getItem(key) 读取存储内容</li>
+<li>removeItem(key) 删除键值为key的存储内容</li>
+<li>clear() 清空所有存储内容</li>
+</ul>
+</li>
+</ul>
+<h2 id="5、网络状态"><a href="#5、网络状态" class="headerlink" title="5、网络状态"></a>5、网络状态</h2><ul>
+<li>window. ononline用户网络连接时被调用</li>
+<li>Window.onoffline用户网络断开时被调用</li>
+</ul>
+<h2 id="6、我的密钥-yue-NsGTBiDpgGQpI7KDmYNAPGuHWGjCh1zk-大家可以用，我语文不好-）"><a href="#6、我的密钥-yue-NsGTBiDpgGQpI7KDmYNAPGuHWGjCh1zk-大家可以用，我语文不好-）" class="headerlink" title="6、我的密钥(yue) :NsGTBiDpgGQpI7KDmYNAPGuHWGjCh1zk (大家可以用，我语文不好..）"></a>6、我的密钥(yue) :NsGTBiDpgGQpI7KDmYNAPGuHWGjCh1zk (大家可以用，我语文不好..）</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/03/03/Web13/" data-id="cj3ls58k4000m9gsxjut5bj5s" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-Web12" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/28/Web12/" class="article-date">
+  <time class="post-time" datetime="2015-02-27T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">28</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/02/28/Web12/">入门到放弃12</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>jQuery</p>
+</blockquote>
+<h3 id="jq中专门宽度和高度以及设置的方法-把width改成height就是高度的方法-传参就是设置"><a href="#jq中专门宽度和高度以及设置的方法-把width改成height就是高度的方法-传参就是设置" class="headerlink" title="jq中专门宽度和高度以及设置的方法 把width改成height就是高度的方法  传参就是设置"></a>jq中专门宽度和高度以及设置的方法 把width改成height就是高度的方法  传参就是设置</h3><ul>
+<li>.innerwidth()实际宽度和内边距</li>
+<li>.outerwindth()宽度和内边距以及边框线</li>
+<li>.width()专门获取元素的宽度  得到的是数组 可直接运算</li>
+<li><p>.outerwindth(true)传递一个true 得到的是内边距+边框线+外边距+宽度</p>
+<ul>
+<li>js中offsetwidth  clien   scrolltop  都是只能获取 不能设置数值</li>
+<li>jq中//获取页面滚动距离上面的高度$(document).scrollTop();可设置数值</li>
+</ul>
+</li>
+<li><p>委托事件  1事件 2选择器  3回调函数</p>
+</li>
+<li><p>委托事件  一定要委托给页面上已经存在的元素</p>
+</li>
+<li><p>jquery中</p>
+<ul>
+<li>e.stopPropagation();//阻止冒泡 （没有兼容问题）</li>
+<li>//e.preventDefault();//阻止默认行为 （但是不阻止冒泡）</li>
+<li><p>return false;//即阻止默认行为 又阻止冒泡</p>
+</li>
+<li><p>//target 触发事件的最根源的元素</p>
+</li>
+<li>//currentTarget 当前事件所属的元素（相当于this）</li>
+<li><p>//delegateTarget 当前事件被委托的元素（委托在谁身上了）</p>
+</li>
+<li><p>console.log(e.currentTarget);//button</p>
+</li>
+<li>console.log(e.target);//button</li>
+<li>console.log(e.delegateTarget);//div 委托给谁了就是谁</li>
+</ul>
+</li>
+</ul>
+<h2 id="多库共存"><a href="#多库共存" class="headerlink" title="多库共存"></a>多库共存</h2><ul>
+<li>jquery的插件都是依赖于jquery所以在引包的时候一定是先jquery然后在插件<br>看插件的test就知道要怎么用插件了</li>
+<li>懒加载挺好的  不看就不加载 看了才会慢慢加载</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">使用JQ <span class="number">1.</span>引用 <span class="number">2.</span>入口函数 <span class="number">3.</span>自己的业务逻辑</div><div class="line">入口函数</div><div class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;) $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div><div class="line"><span class="number">1.</span> JS的入口函数只能写一个 JQ可以写多个</div><div class="line"><span class="number">2.</span> 执行时机不同 JS所有外部资源都加载完成后才执行 JQ当前文档准备好了就执行</div><div class="line">$符号 就是一个函数 $(<span class="built_in">document</span>) $(<span class="keyword">this</span>) $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;) $(<span class="string">"选择器"</span>) $(<span class="string">"符合标签规则的文本"</span>)</div><div class="line"></div><div class="line">JQ对象 &lt;---&gt; DOM对象</div><div class="line">DOM对象 -&gt; JQ对象 $(<span class="built_in">document</span>) $(<span class="keyword">this</span>)</div><div class="line">JQ对象 -&gt; DOM对象 $btn[<span class="number">0</span>] $btn.get(<span class="number">0</span>)</div><div class="line">选择器</div><div class="line">基本选择器 <span class="string">"#id名"</span> <span class="string">".类名"</span> <span class="string">"标签名"</span> <span class="string">"*"</span> <span class="string">"p,li,img"</span> <span class="string">"li.item"</span></div><div class="line">层级选择器 子代 <span class="string">"父级&gt;子级"</span>  后代 <span class="string">"祖先 后代"</span></div><div class="line">过滤选择器 :odd :even :eq(<span class="number">0</span>)</div><div class="line"></div><div class="line">操作样式 css() css(<span class="string">"属性名"</span>) css(<span class="string">"属性名"</span>,<span class="string">"属性值"</span>) css(&#123;&#125;)</div><div class="line">操作类名 addClass()添加类名 removeClass()移除类名 hasClass()判断是否有某个类名 toggleClass()类名切换</div><div class="line">动画</div><div class="line">show()/hide()/toggle() 显示隐藏动画</div><div class="line">slideDown()/slideUp()/slideToggle() 滑入滑出动画</div><div class="line">fadeIn()/fadeOut()/fadeToggle()/fadeTo() 淡入淡出动画</div><div class="line">animate() 自定义动画</div><div class="line">stop() 停止动画</div><div class="line">创建结构</div><div class="line">append()从后面追加/prepend()从前面追加/after()放到后面/before()放到前面</div><div class="line">操作结构</div><div class="line">empty()清空/remvoe()移除/clone()克隆</div><div class="line">代码html() 文本text() 值val()</div><div class="line">尺寸操作 width() innerWith() outerWidth() outerWidth(<span class="literal">true</span>)</div><div class="line">位置操作</div><div class="line">offset() 获取和设置 相对于页面的位置</div><div class="line">position() 获取相对于父盒子的位置（注意：position不能设置 要设置可以用css方法）</div><div class="line">事件 click() bind() delegate() on() off()</div><div class="line">直接绑定 on(事件类型,回调函数)</div><div class="line">委托 on(事件类型,选择器,回调函数)</div><div class="line">事件触发 click() trigger()会触发默认行为 triggerHandler()不会触发默认行为</div><div class="line">事件对象</div><div class="line">e.pageX e.keyCode</div><div class="line">e.stopPropagation()阻止冒泡 e.preventDefault()阻止默认行为</div><div class="line">如果既要阻止冒泡 又要阻止默认行为 <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">链式编程</div><div class="line">设置操作 不需要特定的返回值 就返回之前的对象 就可以一直点下去</div><div class="line">获取操作 有特定的返回值 就会破坏链条 就不能继续点了</div><div class="line">隐式迭代</div><div class="line">设置操作 设置所有的元素</div><div class="line">获取操作 只获取第一个元素（text特殊）</div><div class="line">显式迭代 each(<span class="function"><span class="keyword">function</span>(<span class="params">索引,元素</span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/02/28/Web12/" data-id="cj3ls58k1000k9gsx14mbvn4w" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-Web11" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/21/Web11/" class="article-date">
+  <time class="post-time" datetime="2015-02-20T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
     <span class="post-day">21</span>
   </time>
 </a>
@@ -139,7 +840,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/21/Web03/">入门到放弃3</a>
+      <a class="article-title" href="/2015/02/21/Web11/">入门到放弃11</a>
     </h1>
   
 
@@ -155,137 +856,74 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<p>JS基础语法</p>
+<p>jQuery</p>
 </blockquote>
-<h2 id="网页特效"><a href="#网页特效" class="headerlink" title="网页特效"></a>网页特效</h2><ul>
-<li>codecombat.cn</li>
-<li>webhek.com</li>
-<li>jetbrains.tech  webstrom激活</li>
-<li>懒人之家</li>
-</ul>
-<h2 id="JS加载"><a href="#JS加载" class="headerlink" title="JS加载"></a>JS加载</h2><ul>
-<li><p>异步加载  加载完直接执行</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">More info:&lt;script src=<span class="string">""</span> async=<span class="string">"async"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>推迟执行  加载完等页面内容加载完在加载</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">More info:&lt;script src=<span class="string">""</span> defer=<span class="string">"defer"</span>&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ul>
-<li>字符串相加会拼接，数字相加会等于结果</li>
-<li>比如“11”+“11”  结果1111   1+1 结果2</li>
-<li>什么类型的数据+上字符串都会默认隐式转换成字符串</li>
-<li>number数字类型 var num=18  可以直接看出当前类型的字面量18表示字面量为2</li>
-<li>千万不要以两个浮点数做为判断依据（判断范围可以）</li>
-</ul>
-<h2 id="数字的数字范围"><a href="#数字的数字范围" class="headerlink" title="数字的数字范围"></a>数字的数字范围</h2><ul>
-<li>最大值 max_value  infinity 正的无穷大  </li>
-<li>最小值 min_value -infinity 负的无穷大</li>
-</ul>
-<h2 id="数值检测"><a href="#数值检测" class="headerlink" title="数值检测"></a>数值检测</h2><ul>
-<li>NaN 的数据类型是 number </li>
-<li>NaN 自己和自己都不相等</li>
-<li>isNan 能检测一个数是否是数字   不是数字就返回 true  是数字就返回flase </li>
-</ul>
-<h2 id="字符串类型"><a href="#字符串类型" class="headerlink" title="字符串类型"></a>字符串类型</h2><ul>
-<li>字符串用双引号还是单引号都可以  但是不要混在一起用</li>
-<li><p>将来在操作html代码的时候建议先单引号在双引号</p>
+<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><ul>
+<li>jquery  中只传入属性名，代表获取属性值</li>
+<li>jquery  中传入对象 可以同时设置多个属性</li>
+<li>jquery  中传入属性名和属性值就是代表设置属性</li>
+<li>jquery  获取到的样式直接就是计算完成之后的样式</li>
+<li>jquery  中对象的方式设置样式属性名可以不加字符串但是属性值要写</li>
+<li><p>jquery  在设置样式的时候传入字符串可以是font-size 也可以是fontSize</p>
 <ul>
-<li>字符串的不可变性  指的是内存中的不可变性</li>
-<li>千万别大量拼接字符串，因为字符串的不可变性，导致大量拼接字符串会非常消耗资源</li>
-<li><p>字符串和数字相加的时候  +数字相加  字符相连  只要有字符就会吧其他类型的值转化成<br>字符串进行拼接</p>
+<li>val() 获取文本值</li>
+<li>text() 获取文本内容</li>
+<li>empty() 清空当前元素</li>
+<li>remove() 删除当前元素</li>
+<li>html() 不传递参数代表获取标签结构代码</li>
+<li>attr() 获取src属性  title替换提示文本  alt替换文本</li>
+<li>removeattr  这样删除比较干净</li>
+</ul>
 </li>
-<li><p>逗逗加加  如何吧一个写死的变量如何吧数据改成活的</p>
+<li><p>toggleClass  切换类名有就切换 没有就添加</p>
 </li>
-<li>var minite = 39;</li>
-<li>var str = “现在时间是” + minite + “分”;</li>
+<li>addClass 添加指定类名 可以同时添加多个 空格分开</li>
+<li>hasClass 判断是否有指定类名  有就是true  没有返回false</li>
+<li><p>removeClass   删除指定类名  不传移除的类名就移除所有类名</p>
+</li>
+<li><p>jqeury  show 方法可以传递三个值  fase normal slow</p>
+<ul>
+<li>第一个是速度 第二个是回调函数</li>
+</ul>
+</li>
+<li><p>jquery  hide 方法如果传入的是不认识的字符串就按照normal执行</p>
+<ul>
+<li>第一个是速度 第二个是回调函数</li>
+</ul>
+</li>
+<li><p>slideDown  划入事件  不传参数都会有动画</p>
+</li>
+<li><p>slideUp  划出事件  如同sideDown完全一样</p>
+</li>
+<li><p>show hide  改变的是高度  宽度 以及透明度</p>
+</li>
+<li><p>slideDown slideUp 改变的是高度</p>
+</li>
+<li><p>fadein 淡入的事件和划入完全一样</p>
+</li>
+<li>fadeout 淡出的事件和划出完全一样</li>
+<li>fadetoggle  淡入淡出的切换</li>
+<li>fadeto 淡淡的达到  1.速度 2.目标值 3.效果动画 4.回调函数</li>
+</ul>
+<h3 id="自定义动画"><a href="#自定义动画" class="headerlink" title="自定义动画"></a>自定义动画</h3><ul>
+<li>animate 1.属性 2.速度 3.动画效果 4.回调函数<ul>
+<li>自定义动画只能改变数值类的属性 单一属性 合写可能会出现问题 列如背景色字体无法改变</li>
+<li>swing  速度是 满快慢  linear 匀速动画 如果不传easing这个参数 默认就是swing</li>
+<li>调用动画之前先停止动画  然后就不会存在都离开了 还有好多动画还在队列未执行的效果</li>
+<li>$(“li”).stop().animate({width:”240px”},3000,”swing”)</li>
 </ul>
 </li>
 </ul>
-<h2 id="boolean布尔型"><a href="#boolean布尔型" class="headerlink" title="boolean布尔型"></a>boolean布尔型</h2><ul>
-<li>Booleam()转换字符串中的”” 数值中的0和nan null undefined 转换都是flase  其他都是true</li>
-<li>隐式转化 比如boolean=！！num  就可以成功转换</li>
-</ul>
-<h2 id="undefined"><a href="#undefined" class="headerlink" title="undefined"></a>undefined</h2><ul>
-<li>undefined是特殊类型  说明变量但未赋值</li>
-</ul>
-<h3 id="转化string三种方式"><a href="#转化string三种方式" class="headerlink" title="转化string三种方式"></a>转化string三种方式</h3><ul>
-<li>Tostring() </li>
-<li>undefined和null不能调用tostring()方法</li>
-<li>tostring()什么类型都可以转化成字符串  通用的方式</li>
-<li>隐式转化  定义的变量+上一个空字符串就可以转化成字符串 将来最常用的方式</li>
-</ul>
-<h3 id="转化数字"><a href="#转化数字" class="headerlink" title="转化数字"></a>转化数字</h3><ul>
-<li>Number() 转化成数字的方法  有一个特点转换的东西中只要有不认识的就是nan</li>
-<li>null和flase转化是0  undefined转化会是nan ture会是1 </li>
-<li>只能转换纯数字的的字符串，如果包含了其他字母返回nan</li>
-<li>parseint和parsefloat 是专门吧字符串转换成数字  把认识的数字取出来  不认识的部分忽略</li>
-<li>parseint 不认小数 parsefloat 认识小数</li>
-<li>隐私转换 定义变量 + 上一个0是不能成功转换的 -*/就可以成功转换 </li>
-</ul>
-<h2 id="转义符"><a href="#转义符" class="headerlink" title="转义符"></a>转义符</h2><ul>
-<li>把有特殊含义的字符转换回本意</li>
-<li>把普通字符转换出特殊含义 </li>
-</ul>
-<h2 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h2><ul>
-<li>基本数据类型</li>
-<li>typeof name 可查看当前变量的数据类型</li>
-<li>使用typeof得到的类型名是一个字符串</li>
-<li><p>number数值型 string字符串型 boolean布尔型 undefined 未定义 null空</p>
-</li>
-<li><p>复杂数据类型</p>
-</li>
-<li>object对象</li>
-</ul>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Object</span>(); </div><div class="line">a.value = <span class="number">1</span>;</div><div class="line"> b=a;</div><div class="line"> b.value=<span class="number">2</span>;</div><div class="line">alert(a.value)</div><div class="line">　　ａ　　ｂ　在栈中</div><div class="line">    　对象在堆中</div><div class="line">        把堆的地址给了ｂ</div><div class="line">        b修改了堆值 相当于a改变了值 所以结果也就改变了  结果<span class="number">2</span></div></pre></td></tr></table></figure>
-<h2 id="短路运算两句话"><a href="#短路运算两句话" class="headerlink" title="短路运算两句话"></a>短路运算两句话</h2><ul>
-<li>且运算是找到一个假就是假了 两个都对才是对</li>
-<li>或运算值找到一个真就是真了 两个都假才是假</li>
-</ul>
-<h4 id="零碎知识点"><a href="#零碎知识点" class="headerlink" title="零碎知识点"></a>零碎知识点</h4><ul>
-<li><p>new Date().getDay()获取系统时间0是周日1-6对应周一到周六</p>
-</li>
-<li><p>switch(a)小括号的内容他比的是全等全等之后又break才会跳出不然就到最后一个default然后输出</p>
-</li>
-<li><p>通过观察我们发现，尽管我们对基本类型值进行了类型转换，</p>
-</li>
-<li>原始的数据是不会更改的，我们只是通过转换得到了一个新值。</li>
-<li>+-*/%<br>也可以将其他类型转换为数值型</li>
-<li>-*/%<br>都可以将其他类型转换为数值型</li>
-<li><p>-0 *1 /1 %要比本身的值大就行（但是很麻烦，我们一般不用）</p>
-</li>
-<li><p>在使用+操作转换的时候，将加号放在变量的最前面，就可以了</p>
-</li>
-<li><p>!!变量 隐式转换 可以将其他类型转换为bool类型（比较常用）</p>
-</li>
-<li><p>一元，参与运算的操作数只有一个</p>
-</li>
-<li>++ – 自增1和自减1 </li>
-<li>当++ – 后置时，先参与当前运算，然后在自增（自减）</li>
-<li>当++– 前置时，先进行自增(自减)，然后再参与运算</li>
-</ul>
-<h2 id="string字符串属性"><a href="#string字符串属性" class="headerlink" title="string字符串属性"></a>string字符串属性</h2><ul>
-<li>indexOf <ul>
-<li>可返回某个指定的字符串值在字符串中首次出现的位置<br>  – 第一个值 查找的字符串  第二个值 从什么位置开始查找</li>
-</ul>
-</li>
-<li>splice<ul>
-<li>删除从 index     处开始的零个或多个元素^用参数列表中声明的一个或多个值来替换那些被删除的元素<br>  第一个参数删除什么  第二个参数 保留几个</li>
-</ul>
-</li>
-<li>pop<ul>
-<li>删除数组的最后一个元素并返回删除的元素 </li>
-</ul>
-</li>
-</ul>
-<h1 id="翻转数组"><a href="#翻转数组" class="headerlink" title="翻转数组"></a>翻转数组</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">33</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">77</span>, <span class="number">8</span>, <span class="number">9</span>, <span class="number">10</span>];</div><div class="line"><span class="keyword">var</span> reve = [];</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">reveser</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">var</span> i=arr.length<span class="number">-1</span>;i &gt;= <span class="number">0</span>; i--)&#123;</div><div class="line">        reve[reve.length] = arr[i];</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> reve;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h1 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = [<span class="number">2</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">3</span>,<span class="number">1</span>,<span class="number">4</span>,<span class="number">6</span>];</div><div class="line"><span class="keyword">var</span> b = [];</div><div class="line"><span class="keyword">for</span> ( <span class="keyword">var</span> i = <span class="number">0</span>; i &lt; a.length; i++ ) &#123;</div><div class="line">    <span class="keyword">var</span> flag = <span class="literal">true</span>;</div><div class="line">    <span class="keyword">for</span> ( <span class="keyword">var</span> j = <span class="number">0</span>; j &lt; b.length; j++ ) &#123;</div><div class="line">        <span class="keyword">if</span>( a[i] == b[j] )&#123;</div><div class="line">            flag = <span class="literal">false</span>;</div><div class="line">            <span class="keyword">break</span>;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">if</span>(flag)&#123;</div><div class="line">        b.push(a[i]);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="built_in">console</span>.log(b);</div></pre></td></tr></table></figure>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> wu = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">1</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">45</span>,<span class="number">56</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">5</span>,<span class="number">3</span>,<span class="number">-2</span>,<span class="number">-87</span>,<span class="number">64</span>,<span class="number">-99</span>];</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">fq</span> (<span class="params">arr</span>) </span>&#123;</div><div class="line">    <span class="keyword">var</span> arr1 = [];</div><div class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</div><div class="line">        <span class="keyword">if</span> (arr1.indexOf(arr[i]) === <span class="number">-1</span>) &#123;</div><div class="line">            arr1[arr1.length] = arr[i];</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">console</span>.log(arr1);</div><div class="line">&#125;</div><div class="line">fq(wu);</div></pre></td></tr></table></figure>
-<h1 id="阻止冒泡-和-阻止默认事件"><a href="#阻止冒泡-和-阻止默认事件" class="headerlink" title="阻止冒泡 和  阻止默认事件"></a>阻止冒泡 和  阻止默认事件</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//停止事件冒泡  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopBubble</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="comment">// 如果提供了事件对象，则这是一个非IE浏览器</span></div><div class="line">    <span class="keyword">if</span> ( e &amp;&amp; e.stopPropagation ) &#123;</div><div class="line">        <span class="comment">// 因此它支持W3C的stopPropagation()方法</span></div><div class="line">        e.stopPropagation();</div><div class="line">    &#125; <span class="keyword">else</span> &#123; </div><div class="line">        <span class="comment">// 否则，我们需要使用IE的方式来取消事件冒泡</span></div><div class="line">        <span class="built_in">window</span>.event.cancelBubble = <span class="literal">true</span>;</div><div class="line">    &#125;</div><div class="line">&#125; <span class="comment">//阻止事件默认行为</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopDefault</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="comment">// 阻止默认浏览器动作(W3C)</span></div><div class="line">    <span class="keyword">if</span> ( e &amp;&amp; e.preventDefault ) &#123;</div><div class="line">        e.preventDefault();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="comment">// IE中阻止函数器默认动作的方式</span></div><div class="line">        <span class="built_in">window</span>.event.returnValue = <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">&#125;</div><div class="line">答案解析 : <span class="comment">//停止事件冒泡  </span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopBubble</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="comment">// 如果提供了事件对象，则这是一个非IE浏览器</span></div><div class="line">    <span class="keyword">if</span> ( e &amp;&amp; e.stopPropagation ) &#123;</div><div class="line">        <span class="comment">// 因此它支持W3C的stopPropagation()方法</span></div><div class="line">        e.stopPropagation();</div><div class="line">    &#125; <span class="keyword">else</span> &#123; </div><div class="line">        <span class="comment">// 否则，我们需要使用IE的方式来取消事件冒泡</span></div><div class="line">        <span class="built_in">window</span>.event.cancelBubble = <span class="literal">true</span>;</div><div class="line">    &#125;</div><div class="line">&#125; <span class="comment">//阻止事件默认行为</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">stopDefault</span>(<span class="params">e</span>) </span>&#123;</div><div class="line">    <span class="comment">// 阻止默认浏览器动作(W3C)</span></div><div class="line">    <span class="keyword">if</span> ( e &amp;&amp; e.preventDefault ) &#123;</div><div class="line">        e.preventDefault();</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        <span class="comment">// IE中阻止函数器默认动作的方式</span></div><div class="line">        <span class="built_in">window</span>.event.returnValue = <span class="literal">false</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="stop属性"><a href="#stop属性" class="headerlink" title="stop属性"></a>stop属性</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#btn2"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    $(<span class="string">"div"</span>).stop();</div><div class="line">     第一个参数表示是否清空所有的后续动画</div><div class="line">     第二个参数表示是否立即执行完当前正在执行的动画</div><div class="line">    $(selector).stop(clearQueue,jumpToEnd);</div><div class="line">    $(<span class="string">"div"</span>).stop(<span class="literal">false</span>, <span class="literal">false</span>);<span class="comment">//不清除队列 不跳到最后</span></div><div class="line">    现在正在执行的动画停止于当前的状态 后续动画继续执行</div><div class="line">    $(<span class="string">"div"</span>).stop(<span class="literal">true</span>, <span class="literal">false</span>);<span class="comment">//清除队列 不跳到最后</span></div><div class="line">    现在正在执行的动画停止于当前的状态 后续动画不执行</div><div class="line">    $(<span class="string">"div"</span>).stop(<span class="literal">false</span>, <span class="literal">true</span>);<span class="comment">//不清除队列 跳到最后</span></div><div class="line">    现在正在执行的动画停止目标状态 后续动画继续执行</div><div class="line">    $(<span class="string">"div"</span>).stop(<span class="literal">true</span>, <span class="literal">true</span>);<span class="comment">//清除队列 跳到最后</span></div><div class="line">    现在正在执行的动画停止目标状态 后续动画不执行</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="jquery动态创建新元素"><a href="#jquery动态创建新元素" class="headerlink" title="jquery动态创建新元素"></a>jquery动态创建新元素</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"box"</span>).append(<span class="string">"&lt;span&gt;&lt;/span&gt;"</span>) </div><div class="line">append()方法可以创建页面结构</div><div class="line"><span class="number">1.</span>可以传入符合标签规则的文本</div><div class="line">$(<span class="string">"#box"</span>).append(<span class="string">'&lt;a href="http://www.baidu.com"&gt;百度&lt;/a&gt;'</span>);</div><div class="line"><span class="number">2.</span>还可以传入对象</div><div class="line"><span class="keyword">var</span> $p = $(<span class="string">"p"</span>);</div><div class="line">$(<span class="string">"#box"</span>).append($p);</div><div class="line">如果是页面上原有的标签 会把这个标签从原来的位置揪下来 放到新的位置</div><div class="line">$()中如果传入 符合标签规则的文本 也会被转换为对象</div></pre></td></tr></table></figure>
+<h3 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"button"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    clone() 可以对当前元素进行 克隆</div><div class="line">    参数是一个布尔值</div><div class="line">    一般情况下深层克隆的情况用到的比较多 所以默认就是深层克隆</div><div class="line">    无论传入<span class="literal">false</span>还是<span class="literal">true</span>都是深层克隆</div><div class="line">    <span class="keyword">var</span> $clone = $(<span class="string">"#a"</span>).clone();<span class="comment">//传入false只克隆元素 不克隆事件</span></div><div class="line">    <span class="keyword">var</span> $clone = $(<span class="string">"#a"</span>).clone(<span class="literal">true</span>);<span class="comment">//传入true 会连同事件一起克隆</span></div><div class="line">    $(<span class="string">"#b"</span>).append($clone);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#btn1"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    val() 对应的就是 value 不传参数表示获取</div><div class="line">    <span class="built_in">console</span>.log($(<span class="string">"#inp"</span>).val());</div><div class="line">    html() 对应的是 内部的html代码 不传参数表示获取</div><div class="line">    <span class="built_in">console</span>.log($(<span class="string">"#demo"</span>).html());</div><div class="line">    text() 对应的是 内部的文本 不传参数表示获取</div><div class="line">    <span class="built_in">console</span>.log($(<span class="string">"#demo"</span>).text());</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h4 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">$(<span class="string">"#btn2"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line"><span class="comment">//$("#inp").val("hehehehe");//传入参数表示设置</span></div><div class="line"><span class="comment">//$("#demo").html("&lt;p&gt;新建的p标签&lt;/p&gt;")//传入参数表示设置</span></div><div class="line"><span class="comment">//$("#demo").text("&lt;p&gt;新建的p标签&lt;/p&gt;")//传入参数表示设置</span></div><div class="line">&#125;)</div><div class="line"><span class="comment">//checked disabled selected 这些比较特殊 设置的时候不用attr 用prop</span></div><div class="line">$(<span class="string">"#btn1"</span>).click(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    $(<span class="string">"input"</span>).prop(<span class="string">"checked"</span>, <span class="literal">true</span>);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="api"><a href="#api" class="headerlink" title="api"></a>api</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">操作样式 css()  css(<span class="string">"属性名"</span>)获取 css(<span class="string">"属性名"</span>,<span class="string">"属性值"</span>)设置 css(&#123;&#125;)设置多个</div><div class="line">操作类名</div><div class="line">addClass()添加类名 removeClass()移除类名 hasClass()判断有没指定类名</div><div class="line">toggleClass() 切换类名</div><div class="line">动画</div><div class="line">show()/hide()/toggle() 显示隐藏动画</div><div class="line">slideDown()/slideUp()/slideToggle() 滑入滑出切换</div><div class="line">fadeIn()/fadeOut/fadeToggle()/fadeTo() 淡入淡出</div><div class="line">animate()</div><div class="line">stop()</div><div class="line">创建元素</div><div class="line">$() 如果传入的是符合标签规则的文本 会变为对象</div><div class="line">append()在内部的最后追加/prepend()在内部的最前添加</div><div class="line">before()在当前元素的前面/after()在当前元素的后面添加</div><div class="line"> 清空 empty()/ 自杀 remove()/ 克隆 clone() 都是深层克隆</div><div class="line"> 代码 html() / 文本 text()  / 值 val()</div><div class="line"> 属性操作 attr() attr(<span class="string">"属性名"</span>)获取 attr(<span class="string">"属性名"</span>,<span class="string">"属性值"</span>)设置 attr(&#123;&#125;)多个</div><div class="line"> checked disabled selected 这些特殊属性 用 prop()</div></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/01/21/Web03/" data-id="cj3jy13bm00082ssx01vw5nw4" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2015/02/21/Web11/" data-id="cj3ls58ju000g9gsxco2o9qc3" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
@@ -299,11 +937,11 @@
 
 
   
-    <article id="post-Web02" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Web10" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/18/Web02/" class="article-date">
-  <time class="post-time" datetime="2015-01-17T16:00:00.000Z" itemprop="datePublished">
-    <span class="post-month">1月</span><br/>
+    <a href="/2015/02/18/Web10/" class="article-date">
+  <time class="post-time" datetime="2015-02-17T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
     <span class="post-day">18</span>
   </time>
 </a>
@@ -316,7 +954,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/18/Web02/">入门到放弃2</a>
+      <a class="article-title" href="/2015/02/18/Web10/">入门到放弃10</a>
     </h1>
   
 
@@ -332,37 +970,119 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><ul>
-<li>float  默认值是none   代表不浮动</li>
-<li>float:left;    clear:left;清除当前左侧浮动</li>
-<li>clear:both;  清除两边浮动，这才是真的清除浮动</li>
-<li>浮动的元素他浮动的位置对针对上一个浮动的元素</li>
-</ul>
+<p>jQuery</p>
 </blockquote>
-<h2 id="浮动的盒子是否会遮挡住标准流盒子中的文字和图片"><a href="#浮动的盒子是否会遮挡住标准流盒子中的文字和图片" class="headerlink" title="浮动的盒子是否会遮挡住标准流盒子中的文字和图片?"></a>浮动的盒子是否会遮挡住标准流盒子中的文字和图片?</h2><ul>
-<li>不会遮住  这就是一个特性　文字环绕</li>
+<ul>
+<li>js兼容问题<ul>
+<li>实现简单功能需要很多代码</li>
 </ul>
-<h2 id="闭合浮动-承载浮动"><a href="#闭合浮动-承载浮动" class="headerlink" title="闭合浮动  承载浮动"></a>闭合浮动  承载浮动</h2><ul>
-<li>简单来说就是一个大的父级盒子里面有了两个小盒子，这时候两个小盒子是左浮动了，导致父级盒子没有了高度，这时候你在第二个盒子的后面再写一个盒字，也就是第三个盒子，把第三个盒子的两边浮动清除，然后父盒子被撑开了·这便是所谓的闭合浮动承载浮动就是直接父级overflow:hideen或者单伪元素after又或者before双伪元素让父级盒子形成bfc，bfc的特性就是承载浮动 before不是为了清除浮动他是为了兜住以防外边距顶出去</li>
+</li>
+<li>js容错能力很差<ul>
+<li>同一个对象身上的同一个事件会相互覆盖</li>
 </ul>
-<blockquote>
-<h2 id="面试问题"><a href="#面试问题" class="headerlink" title="面试问题"></a>面试问题</h2></blockquote>
-<h2 id="优雅降级-先做最高版本的效果页面然后在慢慢兼容低版本的页面"><a href="#优雅降级-先做最高版本的效果页面然后在慢慢兼容低版本的页面" class="headerlink" title="优雅降级   先做最高版本的效果页面然后在慢慢兼容低版本的页面"></a>优雅降级   先做最高版本的效果页面然后在慢慢兼容低版本的页面</h2><h2 id="循环渐进-先做最低版本的效果页面然后在慢慢提升到最高版本的页面"><a href="#循环渐进-先做最低版本的效果页面然后在慢慢提升到最高版本的页面" class="headerlink" title="循环渐进   先做最低版本的效果页面然后在慢慢提升到最高版本的页面"></a>循环渐进   先做最低版本的效果页面然后在慢慢提升到最高版本的页面</h2><h2 id="请描述一下精灵图和图标字体的异同点"><a href="#请描述一下精灵图和图标字体的异同点" class="headerlink" title="请描述一下精灵图和图标字体的异同点"></a>请描述一下精灵图和图标字体的异同点</h2><ul>
-<li>相同点：缩小了源文件的体积，减少http请求，提高页面的性能。</li>
-<li>不同点：图标字体具有矢量效果，放大缩小不失真，而且可以使用CSS任意更改图标字体的颜色；而精灵图的大小固定，放大缩小会失真，更改图片颜色时需要重新修改精灵图。</li>
+</li>
+<li>js库就是把常用的代码放进单独的js文件  用的时候直接饮用 这就是库<ul>
+<li>API应用程序编程接口  API相同点几乎全是方法  接口就是 你会用他就行了</li>
 </ul>
-<h2 id="请问什么是CSS初始化，有什么好处？"><a href="#请问什么是CSS初始化，有什么好处？" class="headerlink" title="请问什么是CSS初始化，有什么好处？"></a>请问什么是CSS初始化，有什么好处？</h2><ul>
-<li>CSS初始化是指重设浏览器的样式。不同的浏览器默认的样式可能不尽相同，如果没对CSS初始化往往会出现浏览器之间的页面差异。</li>
-<li>好处：能够统一标签在各大主流浏览器中的默认样式，使得我们开发网页内容时更加方便简洁，同时减少CSS代码量，节约网页下载时间</li>
+</li>
 </ul>
-<h2 id="图标字体"><a href="#图标字体" class="headerlink" title="图标字体"></a>图标字体</h2><pre><code>- 国外  icomoon.io  bootcss.com
-- 国内  iconfontcn
-- 定义申明字体-&gt;把字体代码写入html结构-&gt;申明字体家族名字
-</code></pre>
+<h2 id="jq入口函数-页面文档加载完成"><a href="#jq入口函数-页面文档加载完成" class="headerlink" title="jq入口函数  页面文档加载完成"></a>jq入口函数  页面文档加载完成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(document).ready(<span class="function"><span class="title">function</span></span>()&#123;//当前页面文档准备好了就执行 不会等外部资源</div><div class="line">//自己的业务逻辑</div><div class="line">&#125;)</div><div class="line">$(<span class="keyword">function</span>(&#123;</div><div class="line">//自己的业务逻辑</div><div class="line">&#125;))</div><div class="line">js入口函数</div><div class="line">window.onload=<span class="function"><span class="title">function</span></span>()&#123;//所有外部资源都加载完了才执行 使用重复了会覆盖</div><div class="line">//自己的业务逻辑</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">jq实现点击事件</div><div class="line">    $(<span class="string">"#demo"</span>).click(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line"></div><div class="line">    &#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">js实现点击事件</div><div class="line">demo.onclick=<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><p>jq和js一样什么东西都写在入口函数里面，不会有错</p>
+<ul>
+<li>有时候$符号被占用了  使用jQuery(“#demo”)一样的效果</li>
+</ul>
+</li>
+<li><p>jq对象可以使用jq对象的属性和方法 不能使用dom对象的属性和方法</p>
+</li>
+<li><p>dom对象可以使用dom对象的属性和方法 不能使用jq对象的属性和方法</p>
+</li>
+<li><p>使用dom的方式 操作jq对象是不行的</p>
+<ul>
+<li>$(document.body).css()  两个参数 “属性名”,”属性值”;</li>
+</ul>
+</li>
+<li><p>子代选择器 父级&gt;子级</p>
+</li>
+<li><p>后代选择器 祖先 后代</p>
+<ul>
+<li>过滤选择器</li>
+<li>li:odd  奇数选择器</li>
+<li>li:even  偶数选择器</li>
+<li>li:eq(index)  idnex是索引</li>
+</ul>
+</li>
+<li><p>jq中鼠标划入和划出使用的是</p>
+<ul>
+<li>mouseenter mouseleave</li>
+</ul>
+</li>
+<li><p>next 下一个兄弟元素</p>
+</li>
+<li>find 是去后代中找指定元素</li>
+<li><p>siblings  除自己之外所有兄弟元素</p>
+</li>
+<li><p>jQuery 单独设置样式</p>
+<ul>
+<li>$(selector).css(“color”, “red”);  1属性名 2属性值</li>
+<li>$(selector).css({“color”: “red”,“font-size”:“30px”}); 设置多个样式</li>
+</ul>
+</li>
+</ul>
+<h2 id="闲聊"><a href="#闲聊" class="headerlink" title="闲聊"></a>闲聊</h2><ul>
+<li>大点的公司 开发 测试 上线 都是分开的</li>
+<li>开发就是你自己开发 然后扔给别人  别人压缩上线</li>
+<li><p>测试的就是你开发好后 扔给她 她测试完了  然后扔给上线的那个人</p>
+<ul>
+<li>1.jQuery</li>
+<li>1.1 为什么要学jQuery 简洁 没有兼容问题</li>
+<li>1.2 PC端 兼容IE678使用 1.12.x 如果是移动端可以使用3.2.0</li>
+<li>1.3 引用 入口函数 自己的业务逻辑</li>
+<li>1.4 入口函数<ul>
+<li>window.onload=functon(){};</li>
+<li>$(document).ready(function(){}) $(function(){})</li>
+<li>JS的入口函数只能用一次 JQ可以用很多次</li>
+<li>执行时机不同 JS的入口函数是所有外部资源都加载完了才执行 JQ的是当前文档加载完了就执行</li>
+</ul>
+</li>
+<li>1.5 $() $(“#btn”)选择器 $(function(){})入口函数 $(document)传入DOM对象会变为JQ对象</li>
+</ul>
+</li>
+<li><p>2.JQ对象和DOM对象</p>
+<ul>
+<li>通过JQ方式获取的是JQ对象</li>
+<li>通过JS方式获取的是DOM对象获取是DOM对象的集合<ul>
+<li>JQ-&gt;DOM  $(“#btn”)[0] $(“#btn”).get(0)</li>
+<li>DOM-&gt;JQ  $(document) $(this)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>3.选择器</p>
+<ul>
+<li>基本选择器 “#id名” “.类名” “标签名” “*” “p,div,li” “div.item”</li>
+<li>层级选择器 子代 “父级&gt;子级”  后代 “祖先 后代”</li>
+<li>过滤选择器 :odd 奇数 :even 偶数 :eq(索引) 找指定索引</li>
+</ul>
+</li>
+<li><p>方法（注意是方法） children()在子级中寻找 find()在后代中寻找</p>
+<ul>
+<li>siblings()所有其他的兄弟元素(不包括自己) next()下一个兄弟元素 prev()上一个兄弟元素</li>
+<li>parent()父元素</li>
+<li><p>eq() 按照传入的索引 去前面的集合中超找元素</p>
+</li>
+<li><p>index() 获取当前元素在所有兄弟元素中的索引</p>
+</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/01/18/Web02/" data-id="cj3jy13az00022ssxs1sy7bp4" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2015/02/18/Web10/" data-id="cj3ls58jk000b9gsx79ocicwl" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
@@ -376,11 +1096,11 @@
 
 
   
-    <article id="post-Web01" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Web09" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/15/Web01/" class="article-date">
-  <time class="post-time" datetime="2015-01-14T16:00:00.000Z" itemprop="datePublished">
-    <span class="post-month">1月</span><br/>
+    <a href="/2015/02/15/Web09/" class="article-date">
+  <time class="post-time" datetime="2015-02-14T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
     <span class="post-day">15</span>
   </time>
 </a>
@@ -393,7 +1113,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/01/15/Web01/">入门到放弃</a>
+      <a class="article-title" href="/2015/02/15/Web09/">入门到放弃9</a>
     </h1>
   
 
@@ -409,87 +1129,379 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><p>网站图标shorcut icon图标和网站的关系<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;link rel=<span class="string">"shorcut icon"</span> href=<span class="string">"favicon.ico"</span>/&gt;</div></pre></td></tr></table></figure></p>
-<p>HTML四种布局区别</p>
+<p>DOM树形文档操作</p>
+</blockquote>
 <ul>
-<li>流式布局  京东移动站  百分比</li>
-<li>瀑布流布局  根据页面宽度图片摆放</li>
-<li>圣杯布局   两边不动中间缩小或者变大</li>
-<li>栅格布局  微金所   小到一定程度的时候发生很大的改变</li>
-</ul>
-<h3 id="CSS-默认格式"><a href="#CSS-默认格式" class="headerlink" title="CSS 默认格式"></a>CSS 默认格式</h3><ul>
-<li>@charset “UTF-8”; 这样写以后打开会默认知道是utf-8格式</li>
-</ul>
-<h2 id="文档标准流和脱离标准流"><a href="#文档标准流和脱离标准流" class="headerlink" title="文档标准流和脱离标准流"></a>文档标准流和脱离标准流</h2><h5 id="标准流：在页面中自左而右，自上而下，块元素独占一行，行内元素在一行上显示。直到碰到父元素的边框换行。"><a href="#标准流：在页面中自左而右，自上而下，块元素独占一行，行内元素在一行上显示。直到碰到父元素的边框换行。" class="headerlink" title="标准流：在页面中自左而右，自上而下，块元素独占一行，行内元素在一行上显示。直到碰到父元素的边框换行。"></a>标准流：在页面中自左而右，自上而下，块元素独占一行，行内元素在一行上显示。直到碰到父元素的边框换行。</h5><h5 id="浮动：元素浮动之后会脱离标准流，浮动之后不占据原来的位置，元素浮动之后，在一行上显示，浮动不影响上面的元素，影响的是下面的元素，行内元素浮动之后转换成了行内快元素-不推荐使用，推荐使用display：inline-nlock"><a href="#浮动：元素浮动之后会脱离标准流，浮动之后不占据原来的位置，元素浮动之后，在一行上显示，浮动不影响上面的元素，影响的是下面的元素，行内元素浮动之后转换成了行内快元素-不推荐使用，推荐使用display：inline-nlock" class="headerlink" title="浮动：元素浮动之后会脱离标准流，浮动之后不占据原来的位置，元素浮动之后，在一行上显示，浮动不影响上面的元素，影响的是下面的元素，行内元素浮动之后转换成了行内快元素(不推荐使用，推荐使用display：inline-nlock)"></a>浮动：元素浮动之后会脱离标准流，浮动之后不占据原来的位置，元素浮动之后，在一行上显示，浮动不影响上面的元素，影响的是下面的元素，行内元素浮动之后转换成了行内快元素(不推荐使用，推荐使用display：inline-nlock)</h5></blockquote>
-<h2 id="STX定位的分类"><a href="#STX定位的分类" class="headerlink" title="STX定位的分类"></a>STX定位的分类</h2><ul>
-<li>1.1静态定位：<ul>
-<li>position:static.</li>
-<li>所有标准流都是这个定位，这个属性一般情况下是不会单独使用，一般情况下是通过js来动态给元素清除定位。</li>
-</ul>
-</li>
-<li>1.2相对定位：<ul>
-<li>代码：position:relative.</li>
-<li>注意：<br>– a:如果设置了相对定位但没有设置值，我们的盒子的位置不会改变。<br>– b:相对定位是占据标准流的位置。<br>– c:trbl</li>
-</ul>
+<li>offsetheight 元素自身的高度</li>
+<li>scrollheight 内部内容的高度</li>
+<li>document  没有html这个属性 如果要找html标签就用documentElement属性</li>
+<li><p>window.getComputedStyle  能够获取到所有最终生效的样式</p>
 <ul>
-<li>总结：想当年型。</li>
+<li>IE678有问题 支持currentStyle 属性</li>
 </ul>
 </li>
-<li>1.3绝对定位：<ul>
-<li>作用：可以将一个盒子移动到页面的任意位置。</li>
-<li>步骤：<ul>
-<li>1:将需要移动的元素的postion属性设置为absolute.</li>
-<li>2:将需要移动的元素的位置的坐标记录下来，并通过关键字来设置。</li>
-<li>a:关键字：<ul>
-<li>top:设置元素与浏览器顶部的距离</li>
-<li>left：设置元素与浏览器左边的距离</li>
-<li>right：设置元素与浏览器右边的距离</li>
-<li>bottom：设置元素与浏览器底边的距离。</li>
-</ul>
+<li><p>math.cilen 天花板</p>
 </li>
-</ul>
+<li>math.floor 地板</li>
+<li><p>math.round 就近取整0.5以上或者0.5都上取</p>
 </li>
-</ul>
+<li><p>clientheight 宽度+内边距</p>
+</li>
+<li><p>三大系列总结 都是dom的</p>
 <ul>
-<li>注意点：<ul>
-<li>a:如果盒子没有父元素，那么将来在定位的时候，我们trbl是相对于body元素的。</li>
-<li>b:如果定位的盒子有父元素，但是父元素没有定位，那么这个子元素定位的trbl还是相对于body.</li>
-<li>c:如果定位的盒子有父元素，并且父元素有定位，那么这个元素的定位是相对于它的父元素（子元素定位的trbl是相对于父元素。）。</li>
-<li>d:父元素如果有定位一般情况下这个定位是相对，绝对（如果是静态没有效果）。</li>
-<li>f:绝对定位的盒子不占页面上的位置（脱离标准流）</li>
-<li>e:如果没有设置top，left那么这个元素就算设置了有position属性位置会在父元素的0，0位置。</li>
+<li>offset  scroll  cilen </li>
 </ul>
+</li>
+<li><p>onresize属性可以用来获取或设置当前窗口的resize事件的事件处理函数是window的方法</p>
+</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="string">"&lt;!--和页面加载无法JS建议放在下面  这样页面自身结构和样式会脚在比较快--&gt;"</span></div></pre></td></tr></table></figure>
 <ul>
-<li>总结：看脸型。</li>
-<li>总结：如果将来在页面上使用定位，绝对要遵守这个规律：子绝父相的规律（子元素使用绝对定位，父元素使用相对定位。）</li>
+<li>event.clientX  窗口</li>
+<li>event.pageX   页面</li>
+<li>event.screeX  屏幕<ul>
+<li>最常用的鼠标在页面中的位置  但是有兼容问题</li>
 </ul>
 </li>
 </ul>
+<h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><ul>
+<li>event||window.event;</li>
+<li>var pagX = event.pageX||event.clientX+document.documentElement.scrollLeft;</li>
+<li><p>var pagY = event.pageY||event.clientY+document.documentElement.scrollTop;</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">事件冒泡 有兼容问题</div><div class="line"><span class="keyword">if</span> (event.stopPropagation) &#123;</div><div class="line">    event.stopPropagation();</div><div class="line">&#125; <span class="keyword">else</span> &#123;</div><div class="line">    event.cancelBubble = <span class="literal">true</span>;</div><div class="line">&#125;</div><div class="line">事件目标 有兼容问题</div><div class="line"><span class="keyword">var</span> target = event.target || event.srcElement;</div></pre></td></tr></table></figure>
 </li>
-<li>1.4如果要让父盒子中的子盒子在父盒子中居中显示：<ul>
-<li>注意：如果页面上给盒子的margin值设置为负数。<ul>
-<li>a:让子盒子的margin-left为负数（如果margin为负数不会使用盒子凹陷，盒子会随着对应的设置进行位置。）</li>
-<li>b:让子盒子的left设置为50%;</li>
+<li><p>addEventListener 的三个值 事件监听器 正常浏览器</p>
+<ul>
+<li>type事件类型 字符串比如”click”</li>
+<li>listener事件处理函数 function(){}</li>
+<li>是否使用捕获  先写false</li>
 </ul>
 </li>
+<li><p>removeEventListener  移除事件监听器 正常浏览器</p>
+<ul>
+<li>三个参数  事件  回调函数 是否捕获</li>
+<li>第一个还是”click”</li>
+<li>第二个是  传递有名字的函数方法  匿名的会找不到</li>
+<li>第三个还是 false</li>
 </ul>
 </li>
-<li>1.5固定定位：<ul>
-<li>作用：使用盒子显示浏览器的固定位置。</li>
-<li>代码：position:fixed;<ul>
-<li>a:固定定位会脱离标准流</li>
-<li>b:固定定位会改变元素的显示方式</li>
-<li>总结：死心眼型。</li>
+<li><p>attachEvent 事件监听器 IE678注册</p>
+<ul>
+<li>type事件类型 字符串比如”click”要加on　“onclick”</li>
+<li>listener事件处理函数 function(){}</li>
+<li>是否使用捕获  先写false</li>
 </ul>
 </li>
+<li><p>detachEvent 解绑事件 IE678解绑</p>
+<ul>
+<li>第一个还是”click”</li>
+<li>第二个是  传递有名字的函数方法  匿名的会找不到</li>
+<li>第三个还是 false</li>
 </ul>
+</li>
+<li><p>冒泡是里面到外面  捕获是从外面到最里面</p>
+</li>
+</ul>
+<h3 id="模块化"><a href="#模块化" class="headerlink" title="模块化"></a>模块化</h3><ul>
+<li><p>模块化开发说的简单些就是把一堆方法函数放进去一个对象<br>  -然后通过对象管理函数方法 每次调用这些方法的时候如果有形参那你一定要记得传参</p>
+</li>
+<li><p>e.keyCode 获取当前按键的数字</p>
+</li>
+</ul>
+<h1 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h1><ul>
+<li>数字返回要求true</li>
+<li>字母不符合要求就返回false<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">"-------简单类-------"</span>);</div><div class="line"><span class="comment">//[]表示一个字符的位置 中括号里面的内容表示这个位置可以出现的内容</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[abc]/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[abc]/</span>.test(<span class="string">"b"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[abc]/</span>.test(<span class="string">"c"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[abc]/</span>.test(<span class="string">"d"</span>));<span class="comment">//false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[abc]/</span>.test(<span class="string">"da"</span>));<span class="comment">//true 只要有我想要的就可以</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[abc]/</span>.test(<span class="string">"ad"</span>));<span class="comment">//true 只要有我想要的就可以</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">"-------负向类-------"</span>);<span class="comment">//在简单类中加上^ 表示取反</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[^abc]/</span>.test(<span class="string">"c"</span>));<span class="comment">//false 不要abc其他的都可以</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[^abc]/</span>.test(<span class="string">"d"</span>));<span class="comment">//true 其他的都可以</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[^abc]/</span>.test(<span class="string">"da"</span>));<span class="comment">//true 只要有我想要的就可以</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[^abc]/</span>.test(<span class="string">"ad"</span>));<span class="comment">//true 只要有我想要的就可以</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">"-------范围类-------"</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[abcdefhgi]/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[a-i]/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[a-z]/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[A-Z]/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[0-9]/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">console</span>.log(<span class="string">"-------组合类-------"</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[a-z0-9A-Z]/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/[0-5a-iA-X]/</span>.test(<span class="string">"a"</span>));<span class="comment">//true 顺序随意 范围随意</span></div><div class="line"><span class="comment">//之前只是学习基本语法 不是严格匹配 只要有我要的就可以</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/chuan/</span>.test(<span class="string">"chuan"</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/chuan/</span>.test(<span class="string">"chuang"</span>));</div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/chuan/</span>.test(<span class="string">"achuan"</span>));</div><div class="line"><span class="comment">//但是真正去做表单验证的时候 就需要严格匹配了</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"-----^-----"</span>);<span class="comment">//^在[]里面表示取反 现在是放在开头 表示对开头的限制</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan/</span>.test(<span class="string">"chuan"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan/</span>.test(<span class="string">"achuan"</span>));<span class="comment">//false 必须是以chuan开头</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan/</span>.test(<span class="string">"chuang"</span>));<span class="comment">//true ^只限制开头 结尾不管</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"-----$-----"</span>);</div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/chuan$/</span>.test(<span class="string">"chuan"</span>));<span class="comment">//true 表示必须以chuan结尾</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/chuan$/</span>.test(<span class="string">"chuang"</span>));<span class="comment">//false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/chuan$/</span>.test(<span class="string">"achuan"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"-----^$-----"</span>);<span class="comment">//一起用表示 严格匹配 （表单验证的时候就用这种）</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan$/</span>.test(<span class="string">"chuan"</span>));<span class="comment">//表示必须是chuan</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan$/</span>.test(<span class="string">"achuan"</span>));<span class="comment">//表示必须是chuan</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan$/</span>.test(<span class="string">"chuang"</span>));<span class="comment">//表示必须是chuan</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan$/</span>.test(<span class="string">"chuanchuan"</span>));<span class="comment">//^$一起使用 是严格匹配 就必须是这个东西 表示必须是chuan</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a$/</span>.test(<span class="string">"aa"</span>));<span class="comment">//严格匹配 必须是我要的那个</span></div><div class="line"><span class="comment">//</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"-----*-----"</span>);<span class="comment">//重复零次或更多 x&gt;=0</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a*$/</span>.test(<span class="string">"aaaaaa"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a*$/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a*$/</span>.test(<span class="string">"aa"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a*$/</span>.test(<span class="string">""</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a*$/</span>.test(<span class="string">"d"</span>));<span class="comment">//false 这里已经是严格匹配了 我没要的给我了也不行了</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"-----+-----"</span>);<span class="comment">//重复一次或更多次 x&gt;=1</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a+$/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a+$/</span>.test(<span class="string">"aaaa"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a+$/</span>.test(<span class="string">""</span>));<span class="comment">//false 一次或者多次 0次不行</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"-----?-----"</span>);<span class="comment">//重复零次或一次  x=(0||1)</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a?$/</span>.test(<span class="string">"a"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a?$/</span>.test(<span class="string">""</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a?$/</span>.test(<span class="string">"aaaaaa"</span>));<span class="comment">//false 多次不行</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"-----&#123;n&#125;-----"</span>);<span class="comment">//</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a&#123;2&#125;$/</span>.test(<span class="string">"aa"</span>));<span class="comment">//表示a可以出现2次</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a&#123;2,&#125;$/</span>.test(<span class="string">"aa"</span>));<span class="comment">//表示a可以出现2次或者更多</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a&#123;2,5&#125;$/</span>.test(<span class="string">"aaaaa"</span>));<span class="comment">//表示a可以出现2次到5次(包括2和5)</span></div><div class="line"><span class="built_in">console</span>.log(<span class="string">"-----小测试-----"</span>);<span class="comment">//</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a*$/</span>.test(<span class="string">"aa"</span>));<span class="comment">// &gt;=0</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a&#123;0,&#125;$/</span>.test(<span class="string">"aa"</span>));<span class="comment">// &gt;=0</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a+$/</span>.test(<span class="string">"aa"</span>));<span class="comment">// &gt;=1</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a&#123;1,&#125;$/</span>.test(<span class="string">"aa"</span>));<span class="comment">// &gt;=1</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a?$/</span>.test(<span class="string">"aa"</span>));<span class="comment">// 0||1</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a&#123;0,1&#125;$/</span>.test(<span class="string">"aa"</span>));<span class="comment">// 0||1</span></div><div class="line"><span class="comment">//&#123;&#125; [] ()</span></div><div class="line"><span class="comment">//&#123;&#125; 表示元素出现的次数</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^a&#123;2&#125;$/</span>.test(<span class="string">"aa"</span>));<span class="comment">//true</span></div><div class="line"><span class="comment">//[] 表示一个字符的位置</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^[abc]$/</span>.test(<span class="string">"c"</span>));</div><div class="line"><span class="comment">//() 用来分组 可以提升优先级</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan$/</span>.test(<span class="string">"chuan"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan&#123;2&#125;$/</span>.test(<span class="string">"chuanchuan"</span>));<span class="comment">//false</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^chuan&#123;2&#125;$/</span>.test(<span class="string">"chuann"</span>));<span class="comment">//true</span></div><div class="line"><span class="built_in">console</span>.log(<span class="regexp">/^(chuan)&#123;2&#125;$/</span>.test(<span class="string">"chuanchuan"</span>));<span class="comment">//true</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/02/15/Web09/" data-id="cj3ls58kc000q9gsxbhh5oj0y" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-Web08" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/11/Web08/" class="article-date">
+  <time class="post-time" datetime="2015-02-10T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">11</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/02/11/Web08/">入门到放弃8</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>DOM树形文档操作</p>
+</blockquote>
+<ul>
+<li>appendChild如果是页面已有的元素会被从原来的位置摘下来<br>放到新的位置</li>
+<li>cloneNode 克隆节点 参数true深层克隆 false浅层克隆</li>
+<li>insertBeFore 把一个元素插入到当前元素内部某个元素的前面<br>需要两个参数 第一个是要插到前面的盒子第二个是要被插的盒子</li>
+<li>removeChild 移除子节点 参数就是你想删除的节点 比较推荐这种方式</li>
+<li>innerHTML 等于空在清空内容和事件相关函数不会被销毁 依然遗留在内存<ul>
+<li>这样清空的话会有问题  大量的话会导致内存遗漏  少量的话问题不大</li>
+</ul>
+</li>
+<li>firstElementChild 第一个子元素</li>
+<li>ondblclick  双击事件</li>
+<li><p>在函数中别重复申明变量</p>
+</li>
+<li><p>createELement 动态创建</p>
+</li>
+<li>appendChild 绑定创建的东西</li>
+</ul>
+<h2 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h2><ul>
+<li>.slice  参数可以是负数  负数代表是从后往前</li>
+<li>.substring  参数可以是负数  从后往前</li>
+<li>.sybstr 第一个从哪里开始 第二个参数是要截取几个</li>
+<li>.concat 拼接</li>
+<li><p>.trim 去除两段的空白符</p>
+<ul>
+<li>字符串的所有方法都不会对原字符串产生影响，只是把改变后的返回</li>
+</ul>
+</li>
+<li><p>str.toUpperCase()</p>
+</li>
+<li>str.toLocaleUpperCase()</li>
+<li>str.toLowerCase()</li>
+<li>str.toLocaleLowerCase()</li>
+</ul>
+<h3 id="BOM浏览器"><a href="#BOM浏览器" class="headerlink" title="BOM浏览器"></a>BOM浏览器</h3><ul>
+<li>window在浏览器中的JS中是顶级对象  所以全局变量和全局函数都属于window</li>
+<li>onload窗体加载完成时间  会在窗体加载完成后执行  </li>
+<li>窗体加载完成指的是 当前页面 以及  外部支援（图片 JS CSS）</li>
+<li><p>只要涉及到外部资源 都要吧JS写在onload</p>
+<ul>
+<li>open 1路径 2窗口名 3窗口属性</li>
+<li>close 关闭窗体</li>
+</ul>
+</li>
+<li><p>setTimeout 延时定时器  第一个方法函数 第二个时间 1秒等于1000</p>
+</li>
+<li>clearTimeout  清除定时器 第一个定时器的名字</li>
+<li>setInterval() 间歇定时器 第一个方法函数 第二个时间 1秒等于1000</li>
+<li><p>clearInterval() 清除定时器 第一个定时器的名字</p>
+<ul>
+<li>定时器的回调函数中的this指的是window对象</li>
+</ul>
+</li>
+<li><p>location.reload.hash 哈希值  就是A标签的锚点</p>
+</li>
+<li>location.reload   重新刷新页面</li>
+<li>location.href  地址栏</li>
+<li>location.host  服务器</li>
+<li>location.hostname 服务器名字</li>
+<li>location.pathname 路径名</li>
+<li>location.port  端口</li>
+<li>location.prtocol  地址协议</li>
+<li><p>location.search 地址参数</p>
+</li>
+<li><p>window.navigater  对象可查询是什么设备访问网站</p>
+</li>
+<li>screen.width  屏幕宽度</li>
+<li>screen.height  屏幕高度</li>
+<li>screem.availwidth  可用宽度</li>
+<li>screem.availHeight  可用高度</li>
+</ul>
+<h2 id="offset系列"><a href="#offset系列" class="headerlink" title="offset系列"></a>offset系列</h2><ul>
+<li>对象自身的宽度和高度</li>
+<li>获取到是数值  没单位 可以直接参与计算 对应的是元素真正的高度/宽度  是自读属性 只能读取</li>
+<li>一般用来获取元素的真实宽/高  设置的时候还是会用demo.style这样的设置 offsetwidth</li>
+<li>offset的构成是包括自身的高/宽 边框和内边距  但是不包括外边距</li>
+<li>offsetparent 距离自身最近的带有定位的父级 如果父级没有定位 就一直网上找  直到找到body为止</li>
+<li><p>offsetleft 自身左侧border到父元素的padding值  他也是要找最近切定位的父级 没有就一直往上</p>
+</li>
+<li><p>每秒钟 25帧产生动画效果 60帧效果动画就更细腻 1秒等于24帧</p>
+</li>
+<li><p>动画中想让谁动就得给他加定位  不然是不会动的</p>
 </li>
 </ul>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/01/15/Web01/" data-id="cj3jy13aq00002ssx0q9ku3pg" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2015/02/11/Web08/" data-id="cj3ls58jr000d9gsxp69jmu58" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-Web07" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/08/Web07/" class="article-date">
+  <time class="post-time" datetime="2015-02-07T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">08</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/02/08/Web07/">入门到放弃7</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>DOM树形文档操作</p>
+</blockquote>
+<ul>
+<li>dom被称为文档模型，树上的每一个分支都是对象。</li>
+<li><p>页面自上而下加载 别把JS写在body前面 不然执行的时候找不到html获取不到就没有任何意义了</p>
+</li>
+<li><p>console.log  在控制台输出日志</p>
+</li>
+<li><p>console.dir  在控制台输出目录   这样会以对象的方式输出</p>
+</li>
+<li><p>getElementBy   获取到的都是对象</p>
+</li>
+<li>getElementsBy  获取到都是伪数组 </li>
+</ul>
+<h2 id="事件三要素"><a href="#事件三要素" class="headerlink" title="事件三要素"></a>事件三要素</h2><ul>
+<li>事件源  事件  时间处理程序</li>
+<li>点击按钮弹出警告 按钮 点击  弹出警告框的程序</li>
+<li><p>事件源.事件=function(){事件处理程序}</p>
+</li>
+<li><p>innerText  改变文本 赋值也会变成文本形式输出</p>
+</li>
+<li><p>innerHTML  改变页面标签  符合标签规则就以标签的形式输出  不然就输入文本形式</p>
+</li>
+<li><p>onblur 失去焦点 onfocus 进入焦点</p>
+</li>
+</ul>
+<h3 id="按钮排他"><a href="#按钮排他" class="headerlink" title="按钮排他"></a>按钮排他</h3><ul>
+<li>按钮排他是两层for循环 第一层是控制每次都能点击，第二个是都能全部清空 第二个循环外面的</li>
+<li>this是为了确保当前点击是哪一个</li>
+<li><p>杀死所有的人然后在复活当前对象 this</p>
+<ul>
+<li>标签中有规定的属性，可以反映到对象身上</li>
+<li>标签中没有规定的属性 不能反映到对象身上</li>
+<li>标准中有规定的属性 对象会影响标签</li>
+<li>标准中没有规定的属性 对象不会影响标签</li>
+</ul>
+</li>
+<li><p>总结：</p>
+<ul>
+<li>标准中有规定的属性 标签和对象相互影响</li>
+<li>标准中没有规定的属性 标签和对象不会相互影响</li>
+</ul>
+</li>
+<li><p>专门获取标签中自定义属性的方法 getAttribute(npx.getAttribute(“aaa”))</p>
+</li>
+<li>设置标签方法 setAttribute(“bbb”,222)</li>
+<li><p>移除任意标签属性 removeAttribute(class)</p>
+<ul>
+<li>想知道一个函数的参数以及返回什么就在JS文件里面/**回车就知道了</li>
+</ul>
+</li>
+</ul>
+<h4 id="节点属性"><a href="#节点属性" class="headerlink" title="节点属性"></a>节点属性</h4><ul>
+<li>nodeType节点类型  nodeName节点名称 nodeValue节点的值</li>
+<li>元素节点最常用    标签节点名就是这个标签名字  文本节点内容</li>
+<li><p>getAttributeNode(“id”)可以获取节点属性节点</p>
+</li>
+<li><p>所有获取节点的相关属性都没有兼容问题</p>
+</li>
+<li>children  子元素  虽然不是早期dom方法   但是所有浏览器都支持  </li>
+<li><p>IE8获取的时候可能有点小问题会把注释当成文本</p>
+<ul>
+<li>nextSibling 下一个兄弟元素  nextElementSibling 下一个兄弟元素有兼容问题</li>
+</ul>
+</li>
+<li><p>把数字写在一个方法判断的条件的前面 这样不容易出错  因为数字是没办法赋值的</p>
+<ul>
+<li>console.log(parseInt(Math.random() * 7)); 获取那个随机数 你就乘那个数 这是小技巧</li>
+</ul>
+</li>
+<li><p>onkeyup键盘弹起事件</p>
+</li>
+<li><p>通过.style属性只能获取行内样式 获取到的样式属性只有属性值是字符串带单位</p>
+<ul>
+<li>不严格的来说 就是类样式和行内样式 那个方便写那个</li>
+<li>严格来说只要是设置样式都应该用类名样式，但是如果是涉及到计算的情况，就必须控制行内样式</li>
+</ul>
+</li>
+<li><p>因为设置的是行内样式，所以图片的路径要以HTML文件为准  记得加单位</p>
+<ul>
+<li>filter:alpha(opacity=50)  IE 678  不支持透明度就使用这个</li>
+<li>opacity 子盒子会继承透明度 rgba不会继承</li>
+</ul>
+</li>
+<li><p>display:none  消失后不占位置</p>
+</li>
+<li><p>visibility:hidden    消失后依旧站位</p>
+<ul>
+<li>关闭JD按钮广告 要记得取消a标签的后续事件 不然他会跳转 没跳转就会跳转当前页面导致重新加载然后就没关闭</li>
+<li>同一个浏览器中只能有一个文本框能获取焦点 如果有其他的获取了 前面那个会失去焦点</li>
+</ul>
+</li>
+<li><p>通过JS添加样式属性直接赋值给字符串</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/02/08/Web07/" data-id="cj3ls58jx000i9gsx1js3p7fd" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
@@ -504,6 +1516,10 @@
 
   
 
+
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">next &raquo;</a>
+  </nav>
 </section>
         
           <aside id="sidebar">
@@ -543,7 +1559,7 @@
     <h2 class="author">Zi Wang</h2>
     <h3 class="description">null</h3>
     <div class="count-box">
-      <a href="/archives"><div><strong>4</strong><br>文章</div></a>
+      <a href="/archives"><div><strong>16</strong><br>文章</div></a>
       <a href="/categories"><div><strong>0</strong><br>分类</div></a>
       <a href="/tags"><div><strong>1</strong><br>标签</div></a>
     </div>

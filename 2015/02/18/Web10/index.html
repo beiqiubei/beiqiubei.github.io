@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>入门到放弃10 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="jQuery   js兼容问题 实现简单功能需要很多代码   js容错能力很差 同一个对象身上的同一个事件会相互覆盖   js库就是把常用的代码放进单独的js文件  用的时候直接饮用 这就是库 API应用程序编程接口  API相同点几乎全是方法  接口就是 你会用他就行了    jq入口函数  页面文档加载完成12345678910$(document).ready(function()&amp;#12">
+<meta name="keywords" content="吾之初心 永世不忘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="入门到放弃10">
+<meta property="og:url" content="http://yoursite.com/2015/02/18/Web10/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="jQuery   js兼容问题 实现简单功能需要很多代码   js容错能力很差 同一个对象身上的同一个事件会相互覆盖   js库就是把常用的代码放进单独的js文件  用的时候直接饮用 这就是库 API应用程序编程接口  API相同点几乎全是方法  接口就是 你会用他就行了    jq入口函数  页面文档加载完成12345678910$(document).ready(function()&amp;#12">
+<meta property="og:updated_time" content="2017-06-06T09:29:25.038Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="入门到放弃10">
+<meta name="twitter:description" content="jQuery   js兼容问题 实现简单功能需要很多代码   js容错能力很差 同一个对象身上的同一个事件会相互覆盖   js库就是把常用的代码放进单独的js文件  用的时候直接饮用 这就是库 API应用程序编程接口  API相同点几乎全是方法  接口就是 你会用他就行了    jq入口函数  页面文档加载完成12345678910$(document).ready(function()&amp;#12">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/plugin/bganimation/bg.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <div class="widget-wrap mobile-header">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
+    <h2 class="author">Zi Wang</h2>
+    <h3 class="description">null</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>16</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+        <section id="main"><article id="post-Web10" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/18/Web10/" class="article-date">
+  <time class="post-time" datetime="2015-02-17T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">18</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      入门到放弃10
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>jQuery</p>
+</blockquote>
+<ul>
+<li>js兼容问题<ul>
+<li>实现简单功能需要很多代码</li>
+</ul>
+</li>
+<li>js容错能力很差<ul>
+<li>同一个对象身上的同一个事件会相互覆盖</li>
+</ul>
+</li>
+<li>js库就是把常用的代码放进单独的js文件  用的时候直接饮用 这就是库<ul>
+<li>API应用程序编程接口  API相同点几乎全是方法  接口就是 你会用他就行了</li>
+</ul>
+</li>
+</ul>
+<h2 id="jq入口函数-页面文档加载完成"><a href="#jq入口函数-页面文档加载完成" class="headerlink" title="jq入口函数  页面文档加载完成"></a>jq入口函数  页面文档加载完成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$(document).ready(<span class="function"><span class="title">function</span></span>()&#123;//当前页面文档准备好了就执行 不会等外部资源</div><div class="line">//自己的业务逻辑</div><div class="line">&#125;)</div><div class="line">$(<span class="keyword">function</span>(&#123;</div><div class="line">//自己的业务逻辑</div><div class="line">&#125;))</div><div class="line">js入口函数</div><div class="line">window.onload=<span class="function"><span class="title">function</span></span>()&#123;//所有外部资源都加载完了才执行 使用重复了会覆盖</div><div class="line">//自己的业务逻辑</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">jq实现点击事件</div><div class="line">    $(<span class="string">"#demo"</span>).click(<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line"></div><div class="line">    &#125;)</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">js实现点击事件</div><div class="line">demo.onclick=<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><p>jq和js一样什么东西都写在入口函数里面，不会有错</p>
+<ul>
+<li>有时候$符号被占用了  使用jQuery(“#demo”)一样的效果</li>
+</ul>
+</li>
+<li><p>jq对象可以使用jq对象的属性和方法 不能使用dom对象的属性和方法</p>
+</li>
+<li><p>dom对象可以使用dom对象的属性和方法 不能使用jq对象的属性和方法</p>
+</li>
+<li><p>使用dom的方式 操作jq对象是不行的</p>
+<ul>
+<li>$(document.body).css()  两个参数 “属性名”,”属性值”;</li>
+</ul>
+</li>
+<li><p>子代选择器 父级&gt;子级</p>
+</li>
+<li><p>后代选择器 祖先 后代</p>
+<ul>
+<li>过滤选择器</li>
+<li>li:odd  奇数选择器</li>
+<li>li:even  偶数选择器</li>
+<li>li:eq(index)  idnex是索引</li>
+</ul>
+</li>
+<li><p>jq中鼠标划入和划出使用的是</p>
+<ul>
+<li>mouseenter mouseleave</li>
+</ul>
+</li>
+<li><p>next 下一个兄弟元素</p>
+</li>
+<li>find 是去后代中找指定元素</li>
+<li><p>siblings  除自己之外所有兄弟元素</p>
+</li>
+<li><p>jQuery 单独设置样式</p>
+<ul>
+<li>$(selector).css(“color”, “red”);  1属性名 2属性值</li>
+<li>$(selector).css({“color”: “red”,“font-size”:“30px”}); 设置多个样式</li>
+</ul>
+</li>
+</ul>
+<h2 id="闲聊"><a href="#闲聊" class="headerlink" title="闲聊"></a>闲聊</h2><ul>
+<li>大点的公司 开发 测试 上线 都是分开的</li>
+<li>开发就是你自己开发 然后扔给别人  别人压缩上线</li>
+<li><p>测试的就是你开发好后 扔给她 她测试完了  然后扔给上线的那个人</p>
+<ul>
+<li>1.jQuery</li>
+<li>1.1 为什么要学jQuery 简洁 没有兼容问题</li>
+<li>1.2 PC端 兼容IE678使用 1.12.x 如果是移动端可以使用3.2.0</li>
+<li>1.3 引用 入口函数 自己的业务逻辑</li>
+<li>1.4 入口函数<ul>
+<li>window.onload=functon(){};</li>
+<li>$(document).ready(function(){}) $(function(){})</li>
+<li>JS的入口函数只能用一次 JQ可以用很多次</li>
+<li>执行时机不同 JS的入口函数是所有外部资源都加载完了才执行 JQ的是当前文档加载完了就执行</li>
+</ul>
+</li>
+<li>1.5 $() $(“#btn”)选择器 $(function(){})入口函数 $(document)传入DOM对象会变为JQ对象</li>
+</ul>
+</li>
+<li><p>2.JQ对象和DOM对象</p>
+<ul>
+<li>通过JQ方式获取的是JQ对象</li>
+<li>通过JS方式获取的是DOM对象获取是DOM对象的集合<ul>
+<li>JQ-&gt;DOM  $(“#btn”)[0] $(“#btn”).get(0)</li>
+<li>DOM-&gt;JQ  $(document) $(this)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>3.选择器</p>
+<ul>
+<li>基本选择器 “#id名” “.类名” “标签名” “*” “p,div,li” “div.item”</li>
+<li>层级选择器 子代 “父级&gt;子级”  后代 “祖先 后代”</li>
+<li>过滤选择器 :odd 奇数 :even 偶数 :eq(索引) 找指定索引</li>
+</ul>
+</li>
+<li><p>方法（注意是方法） children()在子级中寻找 find()在后代中寻找</p>
+<ul>
+<li>siblings()所有其他的兄弟元素(不包括自己) next()下一个兄弟元素 prev()上一个兄弟元素</li>
+<li>parent()父元素</li>
+<li><p>eq() 按照传入的索引 去前面的集合中超找元素</p>
+</li>
+<li><p>index() 获取当前元素在所有兄弟元素中的索引</p>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/02/18/Web10/" data-id="cj3ls58jk000b9gsx79ocicwl" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/02/21/Web11/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          入门到放弃11
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/02/15/Web09/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">入门到放弃9</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <h1 class="blog-title">Hexo</h1>
+    <h2 class="blog-subtitle">null</h2>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
+    <h2 class="author">Zi Wang</h2>
+    <h3 class="description">null</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>16</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+
+
+
+    <div class="social-link">
+      
+        <a class="hvr-bounce-in" href="http://github.com/ShanaMaid" target="_blank" title="Github">
+          Github
+        </a>
+      
+    </div>
+
+    <div class="friend-link">
+      <h2>友情链接</h2>
+      
+        <a class="hvr-bounce-in" href="http://blog.shanamaid.top/" target="_blank" title="ShanaMaid">
+          ShanaMaid
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy;2016 - 2017 Zi Wang<br>
+      由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动 | 
+      主题-<a href="https://github.com/ShanaMaid/hexo-theme-shana">Shana</a>
+      
+    </div>
+    
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>   
+
+
+  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+  <script src="/plugin/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+  <link rel="stylesheet" href="/plugin/galmenu/GalMenu.css">
+  <script src="/plugin/galmenu/GalMenu.js"></script>
+  <div class="GalMenu GalDropDown">
+      <div class="circle" id="gal">
+        <div class="ring">
+          
+            <a href="/" title="" class="menuItem">首页</a>
+          
+            <a href="/tags" title="" class="menuItem">标签</a>
+          
+            <a href="/categories" title="" class="menuItem">分类</a>
+          
+            <a href="/archives" title="" class="menuItem">归档</a>
+          
+            <a href="/xxxxxxxxx" title="" class="menuItem">xxx</a>
+          
+            <a href="/xxxxxxx" title="" class="menuItem">xxxx</a>
+          
+        </div>
+        
+          <audio id="audio" src="#"></audio>
+        
+      </div> 
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+  <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+    for (var i = 0,
+    l = items.length; i < l; i++) {
+      items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+      items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+    }</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').GalMenu({
+      'menu': 'GalDropDown'
+    })
+  });
+</script>
+
+  <section class="hidden-xs"> 
+  <ul class="cb-slideshow"> 
+    <li><span>苟利</span></li> 
+    <li><span>国家</span></li> 
+    <li><span>生死以</span></li> 
+    <li><span>岂能</span></li> 
+    <li><span>祸福</span></li> 
+    <li><span>趋避之</span></li> 
+  </ul>
+</section>
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

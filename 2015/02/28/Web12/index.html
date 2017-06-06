@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>入门到放弃12 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="jQuery  jq中专门宽度和高度以及设置的方法 把width改成height就是高度的方法  传参就是设置 .innerwidth()实际宽度和内边距 .outerwindth()宽度和内边距以及边框线 .width()专门获取元素的宽度  得到的是数组 可直接运算 .outerwindth(true)传递一个true 得到的是内边距+边框线+外边距+宽度  js中offsetwidth">
+<meta name="keywords" content="吾之初心 永世不忘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="入门到放弃12">
+<meta property="og:url" content="http://yoursite.com/2015/02/28/Web12/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="jQuery  jq中专门宽度和高度以及设置的方法 把width改成height就是高度的方法  传参就是设置 .innerwidth()实际宽度和内边距 .outerwindth()宽度和内边距以及边框线 .width()专门获取元素的宽度  得到的是数组 可直接运算 .outerwindth(true)传递一个true 得到的是内边距+边框线+外边距+宽度  js中offsetwidth">
+<meta property="og:updated_time" content="2017-06-06T15:40:02.226Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="入门到放弃12">
+<meta name="twitter:description" content="jQuery  jq中专门宽度和高度以及设置的方法 把width改成height就是高度的方法  传参就是设置 .innerwidth()实际宽度和内边距 .outerwindth()宽度和内边距以及边框线 .width()专门获取元素的宽度  得到的是数组 可直接运算 .outerwindth(true)传递一个true 得到的是内边距+边框线+外边距+宽度  js中offsetwidth">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/plugin/bganimation/bg.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <div class="widget-wrap mobile-header">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
+    <h2 class="author">Zi Wang</h2>
+    <h3 class="description">null</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>16</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+        <section id="main"><article id="post-Web12" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/02/28/Web12/" class="article-date">
+  <time class="post-time" datetime="2015-02-27T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">28</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      入门到放弃12
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>jQuery</p>
+</blockquote>
+<h3 id="jq中专门宽度和高度以及设置的方法-把width改成height就是高度的方法-传参就是设置"><a href="#jq中专门宽度和高度以及设置的方法-把width改成height就是高度的方法-传参就是设置" class="headerlink" title="jq中专门宽度和高度以及设置的方法 把width改成height就是高度的方法  传参就是设置"></a>jq中专门宽度和高度以及设置的方法 把width改成height就是高度的方法  传参就是设置</h3><ul>
+<li>.innerwidth()实际宽度和内边距</li>
+<li>.outerwindth()宽度和内边距以及边框线</li>
+<li>.width()专门获取元素的宽度  得到的是数组 可直接运算</li>
+<li><p>.outerwindth(true)传递一个true 得到的是内边距+边框线+外边距+宽度</p>
+<ul>
+<li>js中offsetwidth  clien   scrolltop  都是只能获取 不能设置数值</li>
+<li>jq中//获取页面滚动距离上面的高度$(document).scrollTop();可设置数值</li>
+</ul>
+</li>
+<li><p>委托事件  1事件 2选择器  3回调函数</p>
+</li>
+<li><p>委托事件  一定要委托给页面上已经存在的元素</p>
+</li>
+<li><p>jquery中</p>
+<ul>
+<li>e.stopPropagation();//阻止冒泡 （没有兼容问题）</li>
+<li>//e.preventDefault();//阻止默认行为 （但是不阻止冒泡）</li>
+<li><p>return false;//即阻止默认行为 又阻止冒泡</p>
+</li>
+<li><p>//target 触发事件的最根源的元素</p>
+</li>
+<li>//currentTarget 当前事件所属的元素（相当于this）</li>
+<li><p>//delegateTarget 当前事件被委托的元素（委托在谁身上了）</p>
+</li>
+<li><p>console.log(e.currentTarget);//button</p>
+</li>
+<li>console.log(e.target);//button</li>
+<li>console.log(e.delegateTarget);//div 委托给谁了就是谁</li>
+</ul>
+</li>
+</ul>
+<h2 id="多库共存"><a href="#多库共存" class="headerlink" title="多库共存"></a>多库共存</h2><ul>
+<li>jquery的插件都是依赖于jquery所以在引包的时候一定是先jquery然后在插件<br>看插件的test就知道要怎么用插件了</li>
+<li>懒加载挺好的  不看就不加载 看了才会慢慢加载</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">使用JQ <span class="number">1.</span>引用 <span class="number">2.</span>入口函数 <span class="number">3.</span>自己的业务逻辑</div><div class="line">入口函数</div><div class="line"><span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;;</div><div class="line">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;) $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;)</div><div class="line"><span class="number">1.</span> JS的入口函数只能写一个 JQ可以写多个</div><div class="line"><span class="number">2.</span> 执行时机不同 JS所有外部资源都加载完成后才执行 JQ当前文档准备好了就执行</div><div class="line">$符号 就是一个函数 $(<span class="built_in">document</span>) $(<span class="keyword">this</span>) $(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;&#125;) $(<span class="string">"选择器"</span>) $(<span class="string">"符合标签规则的文本"</span>)</div><div class="line"></div><div class="line">JQ对象 &lt;---&gt; DOM对象</div><div class="line">DOM对象 -&gt; JQ对象 $(<span class="built_in">document</span>) $(<span class="keyword">this</span>)</div><div class="line">JQ对象 -&gt; DOM对象 $btn[<span class="number">0</span>] $btn.get(<span class="number">0</span>)</div><div class="line">选择器</div><div class="line">基本选择器 <span class="string">"#id名"</span> <span class="string">".类名"</span> <span class="string">"标签名"</span> <span class="string">"*"</span> <span class="string">"p,li,img"</span> <span class="string">"li.item"</span></div><div class="line">层级选择器 子代 <span class="string">"父级&gt;子级"</span>  后代 <span class="string">"祖先 后代"</span></div><div class="line">过滤选择器 :odd :even :eq(<span class="number">0</span>)</div><div class="line"></div><div class="line">操作样式 css() css(<span class="string">"属性名"</span>) css(<span class="string">"属性名"</span>,<span class="string">"属性值"</span>) css(&#123;&#125;)</div><div class="line">操作类名 addClass()添加类名 removeClass()移除类名 hasClass()判断是否有某个类名 toggleClass()类名切换</div><div class="line">动画</div><div class="line">show()/hide()/toggle() 显示隐藏动画</div><div class="line">slideDown()/slideUp()/slideToggle() 滑入滑出动画</div><div class="line">fadeIn()/fadeOut()/fadeToggle()/fadeTo() 淡入淡出动画</div><div class="line">animate() 自定义动画</div><div class="line">stop() 停止动画</div><div class="line">创建结构</div><div class="line">append()从后面追加/prepend()从前面追加/after()放到后面/before()放到前面</div><div class="line">操作结构</div><div class="line">empty()清空/remvoe()移除/clone()克隆</div><div class="line">代码html() 文本text() 值val()</div><div class="line">尺寸操作 width() innerWith() outerWidth() outerWidth(<span class="literal">true</span>)</div><div class="line">位置操作</div><div class="line">offset() 获取和设置 相对于页面的位置</div><div class="line">position() 获取相对于父盒子的位置（注意：position不能设置 要设置可以用css方法）</div><div class="line">事件 click() bind() delegate() on() off()</div><div class="line">直接绑定 on(事件类型,回调函数)</div><div class="line">委托 on(事件类型,选择器,回调函数)</div><div class="line">事件触发 click() trigger()会触发默认行为 triggerHandler()不会触发默认行为</div><div class="line">事件对象</div><div class="line">e.pageX e.keyCode</div><div class="line">e.stopPropagation()阻止冒泡 e.preventDefault()阻止默认行为</div><div class="line">如果既要阻止冒泡 又要阻止默认行为 <span class="keyword">return</span> <span class="literal">false</span>;</div><div class="line">链式编程</div><div class="line">设置操作 不需要特定的返回值 就返回之前的对象 就可以一直点下去</div><div class="line">获取操作 有特定的返回值 就会破坏链条 就不能继续点了</div><div class="line">隐式迭代</div><div class="line">设置操作 设置所有的元素</div><div class="line">获取操作 只获取第一个元素（text特殊）</div><div class="line">显式迭代 each(<span class="function"><span class="keyword">function</span>(<span class="params">索引,元素</span>)</span>&#123;&#125;)</div></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/02/28/Web12/" data-id="cj3ls58k1000k9gsx14mbvn4w" class="article-share-link">分享</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/03/03/Web13/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          入门到放弃13
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/02/21/Web11/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">入门到放弃11</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <h1 class="blog-title">Hexo</h1>
+    <h2 class="blog-subtitle">null</h2>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
+    <h2 class="author">Zi Wang</h2>
+    <h3 class="description">null</h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>16</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>1</strong><br>标签</div></a>
+    </div>
+
+
+
+    <div class="social-link">
+      
+        <a class="hvr-bounce-in" href="http://github.com/ShanaMaid" target="_blank" title="Github">
+          Github
+        </a>
+      
+    </div>
+
+    <div class="friend-link">
+      <h2>友情链接</h2>
+      
+        <a class="hvr-bounce-in" href="http://blog.shanamaid.top/" target="_blank" title="ShanaMaid">
+          ShanaMaid
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy;2016 - 2017 Zi Wang<br>
+      由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动 | 
+      主题-<a href="https://github.com/ShanaMaid/hexo-theme-shana">Shana</a>
+      
+    </div>
+    
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>   
+
+
+  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+  <script src="/plugin/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+  <link rel="stylesheet" href="/plugin/galmenu/GalMenu.css">
+  <script src="/plugin/galmenu/GalMenu.js"></script>
+  <div class="GalMenu GalDropDown">
+      <div class="circle" id="gal">
+        <div class="ring">
+          
+            <a href="/" title="" class="menuItem">首页</a>
+          
+            <a href="/tags" title="" class="menuItem">标签</a>
+          
+            <a href="/categories" title="" class="menuItem">分类</a>
+          
+            <a href="/archives" title="" class="menuItem">归档</a>
+          
+            <a href="/xxxxxxxxx" title="" class="menuItem">xxx</a>
+          
+            <a href="/xxxxxxx" title="" class="menuItem">xxxx</a>
+          
+        </div>
+        
+          <audio id="audio" src="#"></audio>
+        
+      </div> 
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+  <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+    for (var i = 0,
+    l = items.length; i < l; i++) {
+      items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+      items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+    }</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').GalMenu({
+      'menu': 'GalDropDown'
+    })
+  });
+</script>
+
+  <section class="hidden-xs"> 
+  <ul class="cb-slideshow"> 
+    <li><span>苟利</span></li> 
+    <li><span>国家</span></li> 
+    <li><span>生死以</span></li> 
+    <li><span>岂能</span></li> 
+    <li><span>祸福</span></li> 
+    <li><span>趋避之</span></li> 
+  </ul>
+</section>
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>入门到放弃2 | Hexo</title>
+  <title>入门到放弃8 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="浮动 float  默认值是none   代表不浮动 float:left;    clear:left;清除当前左侧浮动 clear:both;  清除两边浮动，这才是真的清除浮动 浮动的元素他浮动的位置对针对上一个浮动的元素   浮动的盒子是否会遮挡住标准流盒子中的文字和图片? 不会遮住  这就是一个特性　文字环绕  闭合浮动  承载浮动 简单来说就是一个大的父级盒子里面有了两个小盒子，这时">
+  <meta name="description" content="DOM树形文档操作   appendChild如果是页面已有的元素会被从原来的位置摘下来放到新的位置 cloneNode 克隆节点 参数true深层克隆 false浅层克隆 insertBeFore 把一个元素插入到当前元素内部某个元素的前面需要两个参数 第一个是要插到前面的盒子第二个是要被插的盒子 removeChild 移除子节点 参数就是你想删除的节点 比较推荐这种方式 innerHTML">
 <meta name="keywords" content="吾之初心 永世不忘">
 <meta property="og:type" content="article">
-<meta property="og:title" content="入门到放弃2">
-<meta property="og:url" content="http://yoursite.com/2015/01/18/Web02/index.html">
+<meta property="og:title" content="入门到放弃8">
+<meta property="og:url" content="http://yoursite.com/2015/02/11/Web08/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="浮动 float  默认值是none   代表不浮动 float:left;    clear:left;清除当前左侧浮动 clear:both;  清除两边浮动，这才是真的清除浮动 浮动的元素他浮动的位置对针对上一个浮动的元素   浮动的盒子是否会遮挡住标准流盒子中的文字和图片? 不会遮住  这就是一个特性　文字环绕  闭合浮动  承载浮动 简单来说就是一个大的父级盒子里面有了两个小盒子，这时">
-<meta property="og:updated_time" content="2017-06-04T09:27:27.870Z">
+<meta property="og:description" content="DOM树形文档操作   appendChild如果是页面已有的元素会被从原来的位置摘下来放到新的位置 cloneNode 克隆节点 参数true深层克隆 false浅层克隆 insertBeFore 把一个元素插入到当前元素内部某个元素的前面需要两个参数 第一个是要插到前面的盒子第二个是要被插的盒子 removeChild 移除子节点 参数就是你想删除的节点 比较推荐这种方式 innerHTML">
+<meta property="og:updated_time" content="2017-06-06T08:42:03.693Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="入门到放弃2">
-<meta name="twitter:description" content="浮动 float  默认值是none   代表不浮动 float:left;    clear:left;清除当前左侧浮动 clear:both;  清除两边浮动，这才是真的清除浮动 浮动的元素他浮动的位置对针对上一个浮动的元素   浮动的盒子是否会遮挡住标准流盒子中的文字和图片? 不会遮住  这就是一个特性　文字环绕  闭合浮动  承载浮动 简单来说就是一个大的父级盒子里面有了两个小盒子，这时">
+<meta name="twitter:title" content="入门到放弃8">
+<meta name="twitter:description" content="DOM树形文档操作   appendChild如果是页面已有的元素会被从原来的位置摘下来放到新的位置 cloneNode 克隆节点 参数true深层克隆 false浅层克隆 insertBeFore 把一个元素插入到当前元素内部某个元素的前面需要两个参数 第一个是要插到前面的盒子第二个是要被插的盒子 removeChild 移除子节点 参数就是你想删除的节点 比较推荐这种方式 innerHTML">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -68,12 +68,12 @@
   </div>
 </div>
 
-        <section id="main"><article id="post-Web02" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Web08" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/01/18/Web02/" class="article-date">
-  <time class="post-time" datetime="2015-01-17T16:00:00.000Z" itemprop="datePublished">
-    <span class="post-month">1月</span><br/>
-    <span class="post-day">18</span>
+    <a href="/2015/02/11/Web08/" class="article-date">
+  <time class="post-time" datetime="2015-02-10T16:00:00.000Z" itemprop="datePublished">
+    <span class="post-month">2月</span><br/>
+    <span class="post-day">11</span>
   </time>
 </a>
    
@@ -85,7 +85,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      入门到放弃2
+      入门到放弃8
     </h1>
   
 
@@ -101,37 +101,96 @@
     <div class="article-entry" itemprop="articleBody">
       
         <blockquote>
-<h1 id="浮动"><a href="#浮动" class="headerlink" title="浮动"></a>浮动</h1><ul>
-<li>float  默认值是none   代表不浮动</li>
-<li>float:left;    clear:left;清除当前左侧浮动</li>
-<li>clear:both;  清除两边浮动，这才是真的清除浮动</li>
-<li>浮动的元素他浮动的位置对针对上一个浮动的元素</li>
-</ul>
+<p>DOM树形文档操作</p>
 </blockquote>
-<h2 id="浮动的盒子是否会遮挡住标准流盒子中的文字和图片"><a href="#浮动的盒子是否会遮挡住标准流盒子中的文字和图片" class="headerlink" title="浮动的盒子是否会遮挡住标准流盒子中的文字和图片?"></a>浮动的盒子是否会遮挡住标准流盒子中的文字和图片?</h2><ul>
-<li>不会遮住  这就是一个特性　文字环绕</li>
+<ul>
+<li>appendChild如果是页面已有的元素会被从原来的位置摘下来<br>放到新的位置</li>
+<li>cloneNode 克隆节点 参数true深层克隆 false浅层克隆</li>
+<li>insertBeFore 把一个元素插入到当前元素内部某个元素的前面<br>需要两个参数 第一个是要插到前面的盒子第二个是要被插的盒子</li>
+<li>removeChild 移除子节点 参数就是你想删除的节点 比较推荐这种方式</li>
+<li>innerHTML 等于空在清空内容和事件相关函数不会被销毁 依然遗留在内存<ul>
+<li>这样清空的话会有问题  大量的话会导致内存遗漏  少量的话问题不大</li>
 </ul>
-<h2 id="闭合浮动-承载浮动"><a href="#闭合浮动-承载浮动" class="headerlink" title="闭合浮动  承载浮动"></a>闭合浮动  承载浮动</h2><ul>
-<li>简单来说就是一个大的父级盒子里面有了两个小盒子，这时候两个小盒子是左浮动了，导致父级盒子没有了高度，这时候你在第二个盒子的后面再写一个盒字，也就是第三个盒子，把第三个盒子的两边浮动清除，然后父盒子被撑开了·这便是所谓的闭合浮动承载浮动就是直接父级overflow:hideen或者单伪元素after又或者before双伪元素让父级盒子形成bfc，bfc的特性就是承载浮动 before不是为了清除浮动他是为了兜住以防外边距顶出去</li>
+</li>
+<li>firstElementChild 第一个子元素</li>
+<li>ondblclick  双击事件</li>
+<li><p>在函数中别重复申明变量</p>
+</li>
+<li><p>createELement 动态创建</p>
+</li>
+<li>appendChild 绑定创建的东西</li>
 </ul>
-<blockquote>
-<h2 id="面试问题"><a href="#面试问题" class="headerlink" title="面试问题"></a>面试问题</h2></blockquote>
-<h2 id="优雅降级-先做最高版本的效果页面然后在慢慢兼容低版本的页面"><a href="#优雅降级-先做最高版本的效果页面然后在慢慢兼容低版本的页面" class="headerlink" title="优雅降级   先做最高版本的效果页面然后在慢慢兼容低版本的页面"></a>优雅降级   先做最高版本的效果页面然后在慢慢兼容低版本的页面</h2><h2 id="循环渐进-先做最低版本的效果页面然后在慢慢提升到最高版本的页面"><a href="#循环渐进-先做最低版本的效果页面然后在慢慢提升到最高版本的页面" class="headerlink" title="循环渐进   先做最低版本的效果页面然后在慢慢提升到最高版本的页面"></a>循环渐进   先做最低版本的效果页面然后在慢慢提升到最高版本的页面</h2><h2 id="请描述一下精灵图和图标字体的异同点"><a href="#请描述一下精灵图和图标字体的异同点" class="headerlink" title="请描述一下精灵图和图标字体的异同点"></a>请描述一下精灵图和图标字体的异同点</h2><ul>
-<li>相同点：缩小了源文件的体积，减少http请求，提高页面的性能。</li>
-<li>不同点：图标字体具有矢量效果，放大缩小不失真，而且可以使用CSS任意更改图标字体的颜色；而精灵图的大小固定，放大缩小会失真，更改图片颜色时需要重新修改精灵图。</li>
+<h2 id="字符串方法"><a href="#字符串方法" class="headerlink" title="字符串方法"></a>字符串方法</h2><ul>
+<li>.slice  参数可以是负数  负数代表是从后往前</li>
+<li>.substring  参数可以是负数  从后往前</li>
+<li>.sybstr 第一个从哪里开始 第二个参数是要截取几个</li>
+<li>.concat 拼接</li>
+<li><p>.trim 去除两段的空白符</p>
+<ul>
+<li>字符串的所有方法都不会对原字符串产生影响，只是把改变后的返回</li>
 </ul>
-<h2 id="请问什么是CSS初始化，有什么好处？"><a href="#请问什么是CSS初始化，有什么好处？" class="headerlink" title="请问什么是CSS初始化，有什么好处？"></a>请问什么是CSS初始化，有什么好处？</h2><ul>
-<li>CSS初始化是指重设浏览器的样式。不同的浏览器默认的样式可能不尽相同，如果没对CSS初始化往往会出现浏览器之间的页面差异。</li>
-<li>好处：能够统一标签在各大主流浏览器中的默认样式，使得我们开发网页内容时更加方便简洁，同时减少CSS代码量，节约网页下载时间</li>
+</li>
+<li><p>str.toUpperCase()</p>
+</li>
+<li>str.toLocaleUpperCase()</li>
+<li>str.toLowerCase()</li>
+<li>str.toLocaleLowerCase()</li>
 </ul>
-<h2 id="图标字体"><a href="#图标字体" class="headerlink" title="图标字体"></a>图标字体</h2><pre><code>- 国外  icomoon.io  bootcss.com
-- 国内  iconfontcn
-- 定义申明字体-&gt;把字体代码写入html结构-&gt;申明字体家族名字
-</code></pre>
+<h3 id="BOM浏览器"><a href="#BOM浏览器" class="headerlink" title="BOM浏览器"></a>BOM浏览器</h3><ul>
+<li>window在浏览器中的JS中是顶级对象  所以全局变量和全局函数都属于window</li>
+<li>onload窗体加载完成时间  会在窗体加载完成后执行  </li>
+<li>窗体加载完成指的是 当前页面 以及  外部支援（图片 JS CSS）</li>
+<li><p>只要涉及到外部资源 都要吧JS写在onload</p>
+<ul>
+<li>open 1路径 2窗口名 3窗口属性</li>
+<li>close 关闭窗体</li>
+</ul>
+</li>
+<li><p>setTimeout 延时定时器  第一个方法函数 第二个时间 1秒等于1000</p>
+</li>
+<li>clearTimeout  清除定时器 第一个定时器的名字</li>
+<li>setInterval() 间歇定时器 第一个方法函数 第二个时间 1秒等于1000</li>
+<li><p>clearInterval() 清除定时器 第一个定时器的名字</p>
+<ul>
+<li>定时器的回调函数中的this指的是window对象</li>
+</ul>
+</li>
+<li><p>location.reload.hash 哈希值  就是A标签的锚点</p>
+</li>
+<li>location.reload   重新刷新页面</li>
+<li>location.href  地址栏</li>
+<li>location.host  服务器</li>
+<li>location.hostname 服务器名字</li>
+<li>location.pathname 路径名</li>
+<li>location.port  端口</li>
+<li>location.prtocol  地址协议</li>
+<li><p>location.search 地址参数</p>
+</li>
+<li><p>window.navigater  对象可查询是什么设备访问网站</p>
+</li>
+<li>screen.width  屏幕宽度</li>
+<li>screen.height  屏幕高度</li>
+<li>screem.availwidth  可用宽度</li>
+<li>screem.availHeight  可用高度</li>
+</ul>
+<h2 id="offset系列"><a href="#offset系列" class="headerlink" title="offset系列"></a>offset系列</h2><ul>
+<li>对象自身的宽度和高度</li>
+<li>获取到是数值  没单位 可以直接参与计算 对应的是元素真正的高度/宽度  是自读属性 只能读取</li>
+<li>一般用来获取元素的真实宽/高  设置的时候还是会用demo.style这样的设置 offsetwidth</li>
+<li>offset的构成是包括自身的高/宽 边框和内边距  但是不包括外边距</li>
+<li>offsetparent 距离自身最近的带有定位的父级 如果父级没有定位 就一直网上找  直到找到body为止</li>
+<li><p>offsetleft 自身左侧border到父元素的padding值  他也是要找最近切定位的父级 没有就一直往上</p>
+</li>
+<li><p>每秒钟 25帧产生动画效果 60帧效果动画就更细腻 1秒等于24帧</p>
+</li>
+<li><p>动画中想让谁动就得给他加定位  不然是不会动的</p>
+</li>
+</ul>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/01/18/Web02/" data-id="cj3ls58im00039gsx5vo1wj6p" class="article-share-link">分享</a>
+      <a data-url="http://yoursite.com/2015/02/11/Web08/" data-id="cj3ls58jr000d9gsxp69jmu58" class="article-share-link">分享</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/吾之初心-永世不忘/">吾之初心 永世不忘</a></li></ul>
@@ -142,19 +201,19 @@
     
 <nav id="article-nav">
   
-    <a href="/2015/01/21/Web03/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2015/02/15/Web09/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">上一篇</strong>
       <div class="article-nav-title">
         
-          入门到放弃3
+          入门到放弃9
         
       </div>
     </a>
   
   
-    <a href="/2015/01/15/Web01/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2015/02/08/Web07/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">入门到放弃</div>
+      <div class="article-nav-title">入门到放弃7</div>
     </a>
   
 </nav>
